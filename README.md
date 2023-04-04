@@ -1,2 +1,2 @@
 # work_web
- WEB_exam
+ WEB_exam_ez
