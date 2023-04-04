@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>semantic web샘플</title>
+<!-- css의 인터널 방식은(해당 페이지에서 공동으로 사용) head안에 만듬 -->
+<!-- 시작태그안에 style=""로 만든 css는 인라인 방식으로 해당 태그에 대해서만 적용 -->
+<style>
+html, body { /*html과 body는 html태그와 body태그 엘리먼트 선택*/
+	/*속성 표시로 속성명 : 값;*/
+	height : 100%; /*브라우저 높이 모두 차지*/
+	margin : 0px; /*외부 여백*/
+	padding : 0px; /*내부 여백*/
+	border : 1px solid red; /*테두리선 두께 모양 색*/	
+} 
+header {
+	height : 15%;
+	background: yellow;
+}
+nav {
+	/*블록레벨 엘리먼트는 넓이를 줄여도 그중에 다른 것은 못들어간다.*/
+	height : 70%;
+	width : 15%; 
+	float : left; /*블록레벨 엘리먼트를 좌측부터 일렬 배치, 블록레벨을 인라인 레벨로 변환(일렬배치가능)*/
+	background-color: orange;
+}
+section {
+	width : 70%;
+	height : 70%;
+	float : left; /*블록레벨 엘리먼트를 좌측부터 일렬 배치*/
+	background-color : olivedrab;
+}
+aside{
+	width : 15%;
+	height : 70%;
+	float : left; /*블록레벨 엘리먼트를 좌측부터 일렬 배치*/
+	background-color : orange;
+}
+footer {
+	height : 15%;
+	clear : both; /*float속성을 이제부터는 원래 위치에 배치*/
+	background-color : plum;
+}
+</style>
+</head>
+<body>
+<!-- 모두 블록 태그로 100% 차지 -->
+<!-- 태그는 semantic 태그를 사용했으나 구조화는 안됨 -->
+<!-- 구조화는 css인터널 방식으로 만듬 -->
+<header>header(제목)</header>
+<nav>nav(메뉴)</nav>
+<section>section(본문)</section>
+<aside>aside(부가내용)</aside>
+<footer>footer(일부분, 저자 등의 내용)</footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>forwardTest</title>
+</head>
+<body>
+
+<%
+	int age=Integer.parseInt(request.getParameter("age"));
+	//getParameter반환값은 전부 String이다.
+	if(age<=19) {
+%>
+<%--if문 안에서 실행될 코드가 jsp 아닌 html이면 스크립트릿을 종료하고
+   html을 넣고, html이 끝나면 다시 스크립트릿을 시작한다.
+--%>
+<script type="text/javascript">
+	alert("19세 미만은 입장불가")
+	history.go(-1)
+</script>
+<%
+}
+else {
+	request.setAttribute("name", "성윤정");
+	RequestDispatcher dispatcher = request.getRequestDispatcher("05_forwardResult.jsp");
+	dispatcher.forward(request, response);
+}
+%>
+</body>
+</html>

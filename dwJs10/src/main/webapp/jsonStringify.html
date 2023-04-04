@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>JSONStringify</title>
+</head>
+<body>
+
+<h3>자바스크립트 객체, 배열을 JSON형식의 문자열로 변환</h3>
+<hr/>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+const obj = {name: "John", age: 30, city:"New York"}; //자바스크립트 객체
+const myJSON = JSON.stringify(obj); //객체를 JSON형식의 문자열로 변환
+document.getElementById("demo").innerHTML = myJSON;
+
+//자바스크립트 배열을 JSON형식 배열 문자열로 변환
+const arr = ["John", "Peter", "Sally", "Jane"]; //자바스크립트 배열
+const myArr = JSON.stringify(arr);
+document.getElementById("demo1").innerHTML = myArr; //JSON형식의 배열 문자열
+
+</script>
+</body>
+</html>

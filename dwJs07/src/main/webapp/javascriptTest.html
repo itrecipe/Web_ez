@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>javascriptTest</title>
+</head>
+<body>
+
+<h3>"자바스크립트로 사용자 입력 및 대화"</h3>
+<hr/>
+
+<p>아래 div에 결과가 출력됨</p>
+<div id="result"></div>
+<button type="button" onclick="promptEx()">프롬프트 다이얼로그</button>
+<button type="button" onclick="confirmEx()">확인 다이얼로그</button>
+<button type="button" onclick="alertEx()">경고 다이얼로그</button><br/><br/>
+<a href="javascript:alert('클릭하셨네요!')">클릭</a>
+
+<script>
+let result = document.getElementById("result");
+
+function promptEx() {
+	let ret = window.prompt("이름을 입력 하세요.", "kook");
+
+	if(ret == null) {
+		result.innerHTML = "취소나 그냥 닫았군요.";
+	}
+	else {
+		result.innerHTML = ret;
+	}
+}
+function confirmEx() {
+	let ret = confirm("전송할까요?");
+	if(ret == true) {
+		result.innerHTML = "확인을 눌렀군요.";
+	}
+	else {
+		result.innerHTML = "취소나 그냥 닫았군요.";	}
+}
+function alertEx(){
+	alert("클릭하였습니다.");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+request.setCharacterEncoding("UTF-8"); //post방식에서 입력된 한글 깨짐 방지처리
+%>
+<jsp:useBean id="member" class="com.kook.jspCh06.MemberBean"/>
+<%--form의 입력을 MemberBean 클래스의 멤버변수(필드)에 저장할때 사용--%>
+<jsp:setProperty name="member" property="*"/>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>addMember</title>
+</head>
+<body>
+
+
+</body>
+</html>

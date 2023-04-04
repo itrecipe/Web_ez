@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>window 크기 조정</title>
+</head>
+<body>
+
+<h3>윈도우의 위치와 크기 조절</h3>
+<hr/>
+
+<button type="button" onclick="window.moveBy(-10, 0)">left</button>
+<!-- moveBy(toRight, toDown) -->
+<button type="button" onclick="window.moveBy(10, 0)">right</button>
+<button type="button" onclick="self.moveBy(0, -10)">up</button>
+<button type="button" onclick="moveBy(0, 10)">down</button>
+<button type="button" onclick="resizeBy(10, 10)">+</button>
+<!-- resuzeBy(addW, addH)는 넓이와 높이  -->
+<button type="button" onclick="resizeBy(-10, -10)">-</button>
+
+<!-- window, window.self, self, 생략 해서 함수 사용  -->
+<!-- 이 예제는 익스플로러에서는 잘 실행되지만, Chrome에서는 보안의 이유로 전혀 실행되지 않고,
+Edge에서는 크기 조절만 가능하다. (비사용권고)
+ -->
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!-- 국샘예제(추가설명, 교재에 없는 예제) -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>type="file"</title>
+</head>
+<body>
+
+<h3>파일 입력은 type="file"로 생성</h3>
+<hr/>
+<!-- type="file"은 파일 선택 입력창을 제공하며 무조건 post방식이고 (인코딩타입)enctype="multiport/form-data"
+을 꼭 작성해야 한다. -->
+<!-- 다수개의 파일을 선택하려면 multiple 속성을 추가한다. (파일 업로드시 사용) -->
+<form name="fn" id="fid" action="#" method="post" enctype="multiport/form-data">
+	<input type="file" name="file" multiple/>
+	<input type="submit" value="파일전송"/>
+</form>
+</body>
+</html>

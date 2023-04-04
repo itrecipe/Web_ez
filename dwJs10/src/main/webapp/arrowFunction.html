@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+<meta charset="UTF-8">
+<title>arrowFunction</title>
+</head>
+<body>
+
+<h3>화살표 함수 사용법</h3>
+<hr>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+//함수를 변수 hello로 정의
+/*
+let hello = function(){
+   return "Hellow Worlds!!";
+}
+*/
+//함수를 화살표 함수로 처리
+
+let hello = () => {
+   return "Hello Worlds!!";
+};
+document.getElementById("demo").innerHTML = hello();
+</script>
+</body>
+</html>

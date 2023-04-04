@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>screen 객체</title>
+</head>
+<body onload="printScreen()">
+
+<h3>스크린 장치에 관한 정보</h3>
+<hr/>
+<div id="div"></div>
+
+<script>
+function printScreen() {
+	let text = "availHeight:" + screen.availHeight + "<br/>";
+	//height에서 작업표시줄 제외
+	text += "availWidth:" + screen.availWidth + "<br/>";
+	//width에서 작업표시줄 제외
+	text += "colorDepth:" + screen.colorDepth + "<br/>";
+	//색상의 비트 수
+	text += "pixelDepth:" + screen.pixelDepth + "<br/>";
+	//colorDepth를 사용할것을 권고
+	text += "height:".fontcolor('blue') + screen.height + "<br>";
+	text += "width:".fontcolor('blue') + screen.width + "<br>";
+
+	document.getElementById("div").innerHTML = text;
+}
+</script>
+</body>
+</html>

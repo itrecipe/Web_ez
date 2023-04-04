@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>CSS display속성</title>
+</head>
+<body>
+
+<h3>인라인, 인라인 블록, 블록</h3>
+<hr/>
+
+나는 <div style="display: none;">div(none)</div><br/><br/>
+<!-- display:none은 엘리먼트를 안보이게 하며 차지하는 공간도 없애 버린다. -->
+<!-- display:inline은 inline엘리먼트로 변경(크기 마진 패딩을 못가지며 일렬배치, 내용 만큼만 차지한다. -->
+나는 <div style="display: inline;">div(inline)</div>입니다<br/><br/>
+나는 <div style="display: inline-block; height: 50px; width: 100px;">
+	div(inline)</div>입니다<br/><br/>
+<!-- inline-block은 일렬배치가 가능하며 크기, 마진, 패딩을 지정할 수 있다. -->
+나는 <div>div
+    <span style="display:block; border:1px solid red;">span(block)</span>입니다.
+    </div>
+    
+    <!-- display: block으로 인라인태그를 변경하면 새줄시작, 다른 엘리먼트는 옆에 못옴, 크기 조정 가능 -->
+
+</body>
+</html>

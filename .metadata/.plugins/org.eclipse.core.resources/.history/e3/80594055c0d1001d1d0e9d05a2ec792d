@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>propertyDemo</title>
+</head>
+<body>
+
+<%--jsp:useBean으로 빈 클래스 객체 생성, scope는 디폴트로 page --%>
+<jsp:useBean id="member" class="com.kook.jspCh06.MemberBean"/>
+<hr>
+자바빈 객체 생성 후 저장된 정보 출력<br><br>
+이름 : <jsp:getProperty name="member" property="name"/><br/>
+아이디 : <jsp:getProperty name="member" property="userid" /><br/>
+</body>
+</html>

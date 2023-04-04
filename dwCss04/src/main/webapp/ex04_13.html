@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>box모델</title>
+<style>
+
+body {
+	background-color: ghostwhite;
+}
+
+span {
+	/* span은 인라인태그로 width, height, margin, height를 가질수 없다. */
+	background-color : deepskyblue;
+	border : 1px solid red;
+}
+
+div.box {
+	background-color: yellow;
+	border-style: solid; /* border-top, right, bottom, left의 생략형 */
+	border-color : peru; /* border-top-color, right,bottom.left의 단축형 */
+	margin: 40px; /* 테두리선 border의 외부 여백 margin-top, right, bottom, left의 단축형 */
+	border-width : 30px; /* 4방향 모두 동일하게 단축형 */
+	padding : 20px; /* 내부 여백으로 콘텐츠로부터 테투리선까지의 여백 4방향 모두 동일하게 단축형이다. */	
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+	<span>DIVDIVDIV</span>
+</div>
+
+</body>
+</html>

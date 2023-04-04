@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Math 코어 객체</title>
+<script>
+function randomInt() {
+	return Math.floor(Math.random() * 9) + 1; //1~9 사이의 정수
+	//Math.floor()는 소수점을 절사한 정수 반환
+}
+</script>
+</head>
+<body>
+
+<h3>Math를 활용한 구구단 연습</h3>
+<hr/>
+
+<script>
+let ques = randomInt() + " * " + randomInt(); //곱하기 문제
+let user = prompt(ques + "값은 얼마냐?", 0); //반환값은 문자열
+if(user == null) { //취소 또는 나가기를 하면
+	document.write("구구단 연습을 종료!");
+}
+else {
+	let ans = eval(ques);
+	//eval은 전역함수로 문자열 수식을 계산하고, eval()의 결과는 문자열이다.
+	if(ans == user) {
+		document.write("정답!<br/> ");
+	}
+	else {
+		document.write("아니오!<br/> ");
+	}
+	document.write(ques + "=" + "<strong>" + ans + "</strong>입니다.<br/>");
+}
+</script>
+</body>
+</html>

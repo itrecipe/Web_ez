@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Image class들</title>
+<meta charset="UTF-8">
+<!--RWD-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--BS4 라이브러리-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<!--Jquery라이브러리-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<!--특수목적용 자바스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--최신버젼 자바스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<base href="https://www.w3schools.com/bootstrap4/"><!-- 공통 경로 -->
+</head>
+<body>
+
+<div class="container">
+	<h2>Rounded Corners(모서리를 등글게는 rounded클래스 사용 )</h2>
+	<img src="cinqueterre.jpg" class="rounded" alt="Cinque Terre"
+	width="304" height="236">
+</div>
+<div class="container">
+	<h2>rounded-circle(rounded-circle클래스 사용 )</h2>
+	<img src="cinqueterre.jpg" class="rounded-circle" alt="Cinque Terre"
+	width="304" height="236">
+</div>
+<div class="container">
+	<h2>img-thumbnail(img-thumbnail클래스 사용 )</h2>
+	<img src="cinqueterre.jpg" class="img-thumbnail" alt="Cinque Terre"
+	width="304" height="236">
+</div>
+
+<div class="container clearfix">
+<!-- clearfix는 float-클래스 사용시 다음 엘리먼트가 콘테이너 밖에 배치되도록 함 -->
+<h2>이미지 배치(float-left, float-right클래스 사용)</h2>
+<img src="paris.jpg" class="float-Left " alt="paris" width="304" height="236">
+<img src="paris.jpg" class="float-right" alt="paris" width="304" height="236">
+</div>
+
+<div class="container">
+<h2>이미지 중앙 정렬(mx-auto d-block클래스 사용)</h2>
+<!-- img는 인라인이므로 마진을 못갖게 되어 mx-auto로 수평 중앙을 처리 못하므로
+d-block으로 블록레벨로 변환 -->
+<img src="paris.jpg" class="mx-auto d-block" style="width:50%">
+<!-- width 를 그대로사용하면 100%가 되어 안움직임 -->
+</div>
+
+<div class="container">
+<h2>이미지에 RWD 적용(img-f1uid클래스 사용)</h2>
+<img class="img-fluid" src="img_chania.jpg" alt="chania" width="460" height="345">
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>

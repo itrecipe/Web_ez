@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/*selector와 속성만 만들어줌*/
+body {
+	background-color: linen;
+	color : blueviolet;
+	margin-left: 30px; /* 이웃 엘리먼트와의 좌측 거리 */
+	margin-right: 30px; /* 이웃 엘리먼트와의 좌측 거리 */	
+}
+
+h3 {
+	text-align : center; /* 글자 정렬을 중앙 정렬로 */
+	color : darkred;
+}

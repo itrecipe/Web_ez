@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>대입연산자 = </title>
+</head>
+<body>
+
+<h3>대입연산</h3>
+<hr/>
+
+<script>
+let x = 3, y = 3, z = 3; //한줄에 변수 여러개 선언(자바와 동일하다), =은 대입연산자
+
+document.write("x =" + x + ", y = " + y);
+document.write(", z =" + z + "<br/><br/>");
+
+//결합 대입 연산자
+x += 3; // x=x+3 -> x=6
+y *= 3; // y=y*3 -> y=9
+z %= 2; // z=z%2 -> z=1
+
+document.write("x += 3; 실행 후, x=" + x + "<br/>");
+document.write("y += 3; 실행 후, y=" + y + "<br/>");
+document.write("z += 2; 실행 후, z=" + z);
+
+</script>
+</body>
+</html>

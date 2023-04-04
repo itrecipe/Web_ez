@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- 국쌤예제(추가설명) -->
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>var</title>
+</head>
+<body>
+
+<h3>var키워드로 변수 재정의</h3>
+<hr/>
+
+<p id="demo"></p>
+
+<script>
+var x = 10; //전역변수
+//일반 블록
+{
+	var x = 2; //블록안에서 x를 재정의 하면 var은 전역변수를 만든다.
+	//var은 함수 블록이 아닌 다른 블록에서는 로컬 변수를 못 만든다.
+}
+//x가 2로 재정의 되어 x는 2로 변경되었다.
+document.getElementById("demo").innerHTML = x;
+</script>
+</body>
+</html>

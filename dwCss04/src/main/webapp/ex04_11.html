@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>text관련 css</title>
+
+<!-- 인터널 css로 이 html페이지 전체에서 사용가능 -->
+<style>
+h3 {
+	text-align : right; /* 글자 정렬 */
+	
+}
+
+span {
+	text-decoration : line through; /* 글자 장식은 줄긋기로 line-through는 글자 중앙에 줄긋기 */
+}
+
+strong {
+	text-decoration: overline; /* 윗줄(글자위에 줄긋기) */
+}
+
+.p1 {
+	text-indent : 3em; /* 3글자 들여쓰기 em은 브라우져가 있는 기본글자크기값 대개 16px임 */
+	text-align : justify; /* 양쪽 정렬 */
+}
+
+.p2 {
+	text-indent : 1em; /* 3글자 들여쓰기 em은 브라우져가 있는 기본글자크기값 대개 16px임 */
+	text-align : center; /* 중앙 정렬 */
+}
+</style>
+</head>
+<body>
+
+<h3>텍스트 꾸미기</h3>
+<hr/>
+
+<p class="p1">
+HTML 태그만으로 기존 워드프로세서와 같이 들여쓰기, 정렬, 공백,
+간격 등과 세밀한 <span>텍스트 제어</span>를
+할 수 없다. 이를 위해선 css를 사용한다.
+
+<p class="p2">
+그러나,
+<strong>css는 </strong> 이를 가능케 함
+들여쓰기, 정렬에 대해 알아본다
+</p>
+
+<p>
+	<a href="https://www.naver.com" style="text-decoration:none;">밑줄없는 네이버 링크문자</a>
+	<!-- style속성(시작태그안의 속성 attribute)은 인라인css로 값은 css의 속성처리법을 따른다. --> 
+	<!-- "text-decoration" : 두 단어로 된 경우 -(대시)로 연결 -->
+</p>
+</body>
+</html>

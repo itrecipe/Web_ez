@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>문자열관련 연산자</title>
+</head>
+<body>
+
+<h3>문자열 연산</h3>
+<hr/>
+
+<script>
+/* - js에서 문자열 처리 연산자는 연결 연산자인 +, +=가 있다.
+   - 문자열과 연결시 문자열이 아닌 값은 문자열로 변환되어 연결된다.
+*/
+
+document.write("abc" + 23 + "<br/>"); //문자열 + 숫자는 문자열로 결합한다.
+document.write(23 + "abc" + "<br/>"); //숫자 + 문자열은 문자열로 결합
+document.write(23 + 35 + "<br/>"); 
+document.write(23 + 35 + "<br/>"); //숫자 + 숫자는 산술연산
+document.write(23 + 35 + "abc" + "<br/>"); 
+//순서대로 연산시 산술연산을 숫자로 하며 해당 결과와 문자열 연결이면 해당 결과가 문자열로 반환된다.
+document.write("abc" + 23 + 35 + "<br/><hr/>"); //처음이 문자열이므로 뒤에는 문자열로 결합된다.(자바와 동일하다) 
+
+/* - 자바스크립트는 자바와 달리 문자열 비교시 비교 연산자를 사용가능하다.
+   - 자바는 == null, 숫자 또는 != null, 숫자만 비교 연산자를 사용가능하며 equals()메서드를 사용한다.
+   - 문자열 비교시 사전식순서(오름차순으로 비교, 즉 알파벳 순서가 뒤에 나오면 더 크다, 소문자가 대문자보다 크다)
+*/
+let name = "kitae";
+document.write(name == "kitae");
+document.write("<br/>");
+document.write(name > "park");
+document.write("<br/>");
+let name1 = new String("kitae");
+// ===은 주소를 비교한다
+document.write(name === "name1"); //false
+document.write("<br/>");
+document.write(name == name1) //true, 값만 비교한다.
+</script>
+
+</body>
+</html>

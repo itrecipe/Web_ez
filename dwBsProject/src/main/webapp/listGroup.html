@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>list그룹</title>
+<meta charset="UTF-8">
+<!--RWD-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--BS4 라이브러리-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<!--Jquery라이브러리-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<!--특수목적용 자바스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--최신버젼 자바스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<h3>기본 리스트 그룹은 마커를 없애고 테두리를 준다.</h3>
+	<p>클래스를 list-group, list-group-item으로 구성한다.</p>
+	<ul class="list-group">
+		<li class="list-group-item active">First item</li>
+		<li class="list-group-item">Second item</li>
+		<li class="list-group-item">Third item</li>
+	</ul>
+</div>
+<p></p>
+<div class="container">
+	<h3>list-group에 링크를 사용하려면 ul대신 div를 사용해야 한다.</h3>
+	<p>a에는 list-group-item과 list-group-item-action클래스를 준다.</p>
+	<p>a태그가 블록 레벨이 되어 좌, 우 100% 차지</p>
+	<div class="list-group">
+		<a href="#" class="list-group-item list-group-item-action">First item</a>
+		<a href="#" class="list-group-item list-group-item-action">Second item</a>
+		<a href="#" class="list-group-item list-group-item-action">Third item</a>
+	</div>
+</div>
+<p></p>
+<div class="container">
+	<h3>일부 테두리 제거(수평 경계선 테두리만 남는다.)</h3>
+	<p>ul에 list-group-flush를 추가</p>
+	<ul class="list-group list-group-flush">
+		<li class="list-group-item">First item</li>
+		<li class="list-group-item">Second item</li>
+		<li class="list-group-item">Third item</li>
+	</ul>
+</div>
+<p></p>
+<div class="container">
+	<h3>리스트를 수평 배치</h3>
+	<p>ul에 list-group-horizontal을 추가, inline-block으로 변경된다.</p>
+	<ul class="list-group list-group-horizontal">
+		<li class="list-group-item">First item</li>
+		<li class="list-group-item">Second item</li>
+		<li class="list-group-item">Third item</li>
+	</ul>
+</div>
+<p></p>
+<div class="container">
+	<h3>리스트에 색상 주기</h3>
+	<p>list에 list-group-item색상을 추가</p>
+	<ul class="list-group">
+		<li class="list-group-item list-group-item-success">First item</li>
+		<li class="list-group-item list-group-item-danger">Second item</li>
+		<li class="list-group-item list-group-item-info">Third item</li>
+	</ul>
+</div>
+<p></p>
+<div class="container">
+	<h3>리스트 그룹에 배지 추가</h3>
+	<p></p>
+	<ul class="list-group">
+		<li class="list-group-item d-flex justify-content-between align-items-center">
+			Inbox
+			<span class="badge badge-primary badge-pill">12</span>
+		</li>
+		
+		<li class="list-group-item d-flex justify-content-between align-items-center">
+			Ads
+			<span class="badge badge-success badge-pill">50</span>
+		</li>
+	</ul>
+</div>
+</body>
+</html>

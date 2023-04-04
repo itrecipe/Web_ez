@@ -1,0 +1,39 @@
+<%@page import="java.net.URLEncoder"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>actionTagTest</title>
+</head>
+<body>
+<%	
+	/* 액션태그도 안에서 사용 못함
+	 * param에 추가한 정보는 이동된 페이지에서 getParameter() 메서드로 반환을 해준다.
+	 */
+	String userID=request.getParameter("userID");
+	String userPwd=request.getParameter("userPwd");
+	String loginCheck=request.getParameter("loginCheck");
+	if(loginCheck.equals("user")) {
+%>
+	<%--* forward액션태그는 servlet의 forware(request, response)메서드 역활
+		* param액션태그는 form의 입력 요소 처럼 동작한다.
+		* 한글 처리는 encode처리를 직접 해줘야 한다.
+		
+	 --%>	
+	 <jsp:forward page="09_userMain.jsp">
+	<jsp:param value='<%=URLEncoder.encode("전고객", "UTF-8")%>' name="userName"/>	
+	</jsp:forward>
+<%
+}
+else {
+%>
+	<jsp:forward page="09_managerMain.jsp">
+	<jsp:param value='<%=URLEncoder.encode("성관리", "UTF-8")%>' name="userName"/>	
+	</jsp:forward>
+<% 
+}
+%>
+</body>
+</html>

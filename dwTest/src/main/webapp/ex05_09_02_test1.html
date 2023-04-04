@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>ul로 메뉴바 만들기</title>
+<meta charset="UTF-8">
+<style>
+#menubar {
+	background: black;
+}
+#menubar ul {
+	margin: 0;
+	padding: 0;
+	width: 567px;
+}
+#menubar ul li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 15px 15px;
+}
+#menubar ul li a {
+	color: white;
+	text-decoration: none;
+}
+#menubar ul li a:hover {
+	color : paleturquoise;
+}
+
+</style>
+</head>
+<body>
+
+<h3>cafe 메뉴바 만들기</h3>
+<hr/>
+
+<nav id="menubar">
+	<ul>
+		<li><a href="#">홈</a></li>
+		<li><a href="#">아메리카노</a></li>
+		<li><a href="#">카푸치노</a></li>
+		<li><a href="#">카페라떼</a></li>
+		<li><a href="http://www.naver.com" target="_blank">네이버</a></li>
+	</ul>
+</nav>
+
+</body>
+</html>

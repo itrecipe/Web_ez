@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>@keyframes animation</title>
+
+<style>
+@keyframes bomb {
+	from {font-size : 500%;} /* from은 0%로 사용가능*/
+	to {font-size : 100%;} /* to는 100%로 사용가능*/
+	/* 단계가 여러 단계일시는 %로 0% 25% 50% 75% 100%*/
+}
+
+/* 정의된 @keyframes규칙을 사용 */
+h3 {
+	animation-name : bomb; /* 적용하는 @keyframes이름 */
+	animation-duration : 3s; /* 애니메이션효과 시간 */
+	animation-iteration-count : infinite; /* 반복 횟수 */
+	
+}
+
+@keyframes textColorAnimation {
+	0% { color : blue; }
+	30% { color : green; }
+	50% { color : red; }
+}
+span {
+	animation-name : textColorAnimation; /* 적용하는 @keyframes이름 */
+	animation-duration : 5s; /* 애니메이션효과 시간 */
+	animation-iteration-count : infinite; /* 반복 횟수 */
+	
+}
+</style>
+</head>
+<body>
+
+<h3>꽝!</h3>
+<hr/>
+<p>
+꽝! 글자가 3초동안 500%에서 시작하여 
+100%로 바뀌는 애니메이션입니다.
+무한 반복합니다 ㅋㅋ
+</p>
+<br/><br/>
+<p><span>span</span>텍스트를 5초마다 blue, green, red 무한 반복한다.</p>
+</body>
+</html>

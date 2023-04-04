@@ -1,0 +1,12 @@
+package com.kook.jspCh07;
+
+public class MemberBean {
+	private String name;
+	private String userid;
+	
+	public MemberBean() { //기본 빈 생성자 생성
+		super();
+	}
+	
+	
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>contextmenu창 처리</title>
+</head>
+<body>
+
+<h3>oncontextmenu에서 컨텍스트 메뉴 금지</h3>
+<hr/>
+마우스 오른쪽 클릭은 금지됩니다. 아무곳이나
+클릭해도 컨텍스트 메뉴를 볼 수 없습니다.<br/>
+
+<img src="media/beach2.png" alt="Miami">
+
+<script>
+document.oncontextmenu = hideMenu;
+/* - DOM의 최상위인 document객체에 oncontextmenu리스너를 등록한다.
+   - oncontextmenu리스너의 기본은 팝업 형태의 contextment를 보여주고 마우스 오른쪽 버튼 클릭시 발생한다.
+*/
+
+function hideMenu(e) {
+	e.preventDefault(); //기본 기능인 팝업창이 나오는 것을 막는다.
+	//return false; 기본 동작인 contextmenu 출현을 금지 시킨다.
+}
+</script>
+
+</body>
+</html>

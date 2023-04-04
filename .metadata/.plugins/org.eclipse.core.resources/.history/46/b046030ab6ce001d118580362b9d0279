@@ -1,0 +1,16 @@
+<%@ page import="java.net.URLDecoder" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>managerMain</title>
+</head>
+<body bgcolor="yellow">
+<h3>사용자 로그인 성공</h3>
+<!-- 값을 넣을땐 incode, 읽어올땐 decode를 사용 -->
+<%=URLDecoder.decode(request.getParameter("userName"), "UTF-8") %>
+(<%=request.getParameter("userID") %>)님 환영해요
+</body>
+</html>

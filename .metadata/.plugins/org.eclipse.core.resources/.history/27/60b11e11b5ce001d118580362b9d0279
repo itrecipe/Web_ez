@@ -1,0 +1,32 @@
+<%@page import="java.net.URLEncoder"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%	
+	//액션태그도 안에서 사용 못함
+	String userID=request.getParameter("userID");
+	String userPwd=request.getParameter("userPwd");
+	String loginCheck=request.getParameter("loginCheck");
+	if(loginCheck.equals("user")) {
+%>
+	<jsp:forward page="09_userMain.jsp">
+	<jsp:param value='<%=URLEncoder.encode("전고객", "UTF-8")%>' name="userName"/>	
+	<%--param에 추가한 정보는 이동된 페이지에서 getParameter() 메서드로 반환을 해준다.--%>
+	</jsp:forward>
+<%
+}
+else { 
+%>
+	<jsp:forward page="09_managerMain.jsp">
+	<jsp:param value='<%=URLEncoder.encode("성관리", "UTF-8")%>' name="userName"/>	
+	</jsp:forward>
+	
+<% } %>
+</body>
+</html>

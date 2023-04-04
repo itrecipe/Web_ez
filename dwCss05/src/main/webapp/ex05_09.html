@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>css list-style</title>
+
+<style>
+ul {
+	background-color: goldenrod;
+	padding: 10px 10px 10px 50px;
+	/* 상, 우, 하, 좌(측) 패딩 */
+	list-style-position: inside;
+	/* - 마커의 위치 속성으로 값은 li안에 주는 inside와 밖에 주는 outside가 있으며 ul에 준다. 
+	   - default값은 outside를 준다.
+	*/
+	/* list-style-type: square; */ /* 마커의 모양(검정색 사각형) */
+	/* - disc(ul 기본 검정색 원), circle(하얀색 원), square(검정색 사각형), decimal(숫자), lower-alpha(소문자)
+	     upper-alpha(대문자), lower-roman(로마 소문자), upper-roman(로마 대문자)
+	*/
+	list-style-image: url("media/marker.png"); /* 마커를 이미지로 사용한다. */
+}
+
+ul li { /* 공백은 후손 관계(자식, 손자 포함) */
+	background-color: greenyellow;
+	margin-bottom: 5px; /* li의 이웃인 다른 li나 ul과의 아래측 여백 */
+}
+
+</style>
+</head>
+<body>
+
+<h3>커피메뉴</h3>
+<hr/>
+
+<!-- ul의 기본 마커는 disc인 검정색 원이다. -->
+<ul>
+	<li>Espresso</li>
+	<li>Cappuccino</li>
+	<li>Cafe Latte</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>JSON.parse()</title>
+</head>
+<body>
+
+<h3>JSON의 parse() 메서드 사용</h3>
+<hr/>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+const txt = '{"name":"John", "age":30, "city":"New York"}'
+/* - 키값에 ""가 있고 전체를 문자열 표시인 ''을 사용하였으므로 JSON형식 문자열이다.
+   - JSON형식의 문자열은 JSON.parse(txt)로 자바스크립트 객체형으로 변환한다. 
+*/
+const obj = JSON.parse(txt);
+//const obj = {name:"John", age:30, city:"New York"};로 변환된다.
+
+document.getElementById("demo").innerHTML = obj.name + ", " + obj.age;
+
+//JSON형식의 배열표시 문자열
+const text = '[ "Ford", "BMW", "Audi", "Fiat"]';
+const myArr = JSON.parse(text); //자바스크립트의 Array객체로 반환한다.
+document.getElementById("demo1").innerHTML = myArr[0];
+
+</script>
+
+</body>
+</html>

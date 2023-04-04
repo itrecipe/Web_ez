@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>외부 자바스크립트 파일 사용</title>
+<!-- 외부 js파일을 사용할때 보통은 head에 넣어주나, 필요할때는 body에 작성한다. -->
+<script src="js/ex06.js"></script>
+</head>
+<body>
+
+<h3>마우스 올려 봐라</h3>
+<hr/>
+
+<img src="media/apple.png" alt="사과"
+	onmouseover="over(this)"
+	onmouseout="out(this)"/>
+<!-- ex06.js에 있는 함수를 호출한다. -->
+</body>
+</html>

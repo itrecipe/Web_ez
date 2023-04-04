@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Image코아 객체 사용</title>
+
+<script>
+//사용할 8개의 이미지 파일을 가진 배열
+// 미리 로딩해둘 이미지 이름 배열
+let files = [
+	"media/Penguins.png",
+	"media/Lighthouse.png",
+	"media/Chrysanthemum.png",
+	"media/Desert.png",
+	"media/Hydrangeas.png",
+	"media/Jellyfish.png",	
+	"media/Koala.png",	
+	"media/Tulips.png",
+];
+let imgs = new Array(); //배열 객체 생성
+for(let i=0; i < files.length; i++) { 
+	imgs[i] = new Image(); //배열 imgs에 코아 객체 Imags객체(빈 객체) 대입
+	imgs[i].src = files[i]; // 이미지 로딩
+}
+
+// 다음 이미지 출력
+let next = 1;
+function change(img) { //파라미터는 클릭 이벤트리스너에서 보내는 img 객체다
+	img.src = imgs[next].src; // 이미지 변경
+	next++; // 다음 이미지 (색인번호)
+	next %= imgs.length; //원소개수 초과시에는 색인번호로 변경한다.
+}
+</script></head>
+<body>
+<h3>new Image()로 이미지 로딩</h3>
+<hr>
+이미지를 클릭하면 다음 이미지를 보여줍니다.<p>
+<img style="border:20px ridge wheat"
+		 src="media/penguins.png" alt="."  width="200" height="200" 
+ 		 onclick="change(this)">
+<!-- this 자바스크립트에서 자신 또는 이벤트가 일어난 객체를 나타내므로 img엘리먼트의 DOM이다. -->
+</body>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>ajax load메서드</title>
+<meta charset="UTF-8">
+<!--RWD-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--BS4 라이브러리-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<!--Jquery라이브러리-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<!--특수목적용 자바스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--최신버젼 자바스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+
+<button id="btn1">Get External Content</button>
+<button id="btn2">Get External html</button>
+<button id="btn3">Get External content중 일치하는 id</button>
+
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+		$("#div1").load("load/demo_test.txt", function(responseTxt, statusTxt, xhr){
+			if(statusTxt == "success"){
+				alert("외부 자원을 성공적으로 로딩 했습니다!!");
+			}
+			if(statusTxt == "error"){ //서버 연결 실패
+				alert("에러 : " + xhr.status + " , " + xhr.statusText);
+				//xhr.status는 에러 코드, xhr.statusText는 에러 내용을 출력한다.
+			}
+		});
+	});
+	
+	$("#btn2").click(function(){
+		$("#div1").load("fade.html", function(responseTxt, statusTxt, xhr){
+			if(statusTxt == "success"){
+				alert("외부 자원을 성공적으로 로딩 했습니다!!");
+			}
+			if(statusTxt == "error"){ //서버 연결 실패
+				alert("에러 : " + xhr.status + " , " + xhr.statusText);
+				//xhr.status는 에러 코드, xhr.statusText는 에러 내용을 출력한다.
+			}
+		});
+	});
+
+	$("#btn3").click(function(){
+		//txt문서 내용중 id가 p1인 내용만 로딩한다.
+		$("#div1").load("load/demo_test.txt #p1", function(responseTxt, statusTxt, xhr){
+			if(statusTxt == "success"){
+				alert("외부 자원을 성공적으로 로딩 했습니다!!");
+			}
+			if(statusTxt == "error"){ //서버 연결 실패
+				alert("에러 : " + xhr.status + " , " + xhr.statusText);
+				//xhr.status는 에러 코드, xhr.statusText는 에러 내용을 출력한다.
+			}
+		});
+	});
+});
+</script>
+</body>
+</html>

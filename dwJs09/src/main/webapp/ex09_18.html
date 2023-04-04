@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>checkbox의 이벤트</title>
+</head>
+<body>
+
+<h3>물품을 선택하면 금액이 자동 계산 됩니다</h3>
+<hr/>
+
+<!-- checkbox, radio는 click이벤트나 change이벤트를 발생 시킨다.  -->
+<form>
+	<input type="checkbox" name="hap" value="10000" onclick="calc(this)">모자 1만원
+	<input type="checkbox" name="shose" value="30000" onclick="calc(this)">구두 3만원
+	<input type="checkbox" name="bag" value="80000" onclick="calc(this)">명품가방 8만원
+	<br/>
+	지불할 금액 : <input type="text" id="sumtext" value="0">
+</form>
+
+<script>
+let sum = 0;
+function calc(cBox) {
+	if(cBox.checked) {
+		sum += parseInt(cBox.value); //input의 value속성은 문자열
+		//parseInt는 전염함수로 숫자형 문자열을 숫자형으로 변환 한다.
+	}
+	else { //checked 상태에서 클릭하면 체크 상태가 풀린다.(checked==false) 
+		sum -= parseInt(cBox.value);
+	}
+	document.getElementById("sumtext").value = sum;
+}
+</script>
+</body>
+</html>

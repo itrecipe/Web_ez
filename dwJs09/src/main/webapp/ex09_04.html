@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>이벤트처리 함수를 익명의 함수로 만들기</title>
+</head>
+<body onload="init()">
+
+<h3>익명 함수로 이벤트 리스너 작성</h3>
+<hr>
+<p id="p">마우스 올리면 orchid 색으로 변경</p>
+
+<script>
+let p;
+function init() {
+	p = document.getElementById("p"); //DOM객체 P를 생성
+	p.onmouseover = function() {
+		//이름이 없는 익명의 함수로 이벤트 처리 함수를 만들었다.
+		this.style.backgroundColor = "orchid";
+	}
+	//파라미터에 직접 익명 함수를 만들었다.
+	p.addEventListener("mouseout", function() {
+		this.style.backgroundColor = "yellow";		
+	});
+}
+</script>
+</body>
+</html>

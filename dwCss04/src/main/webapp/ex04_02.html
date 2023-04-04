@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>CSS 맛보기</title>
+<!-- head안에 css를 만들기 위해선 style태그 사용 -->
+<!-- head안에 css는 internal(내부) css라 하며 현재 페이지 공통으로 사용할수 있는 CSS -->
+<style>
+/* - style태그안에서 주석 표시(자바 여러줄 주석이랑 동일)
+   - css(style)는 선택자(엘리먼트(요소)를 선택)와 블록{} 안에 "속성명:값;" 형식으로 작성한다.
+*/
+body {
+background-color : mistyrose; /* 속성 : 값; */
+
+}
+h3 {
+	color : purple; /* color속성은 글자색 */
+}
+hr {
+	border: 5px solid yellowgreen;
+	/* - border는 테두리선 속성을 단축형으로 3개의 속성을 같이 사용, 
+	     테두리선 두께 5px 실선 yellowgreen색 
+	*/
+}
+span {
+	color : blue;
+	font-size : 20px;
+	/* css속성은 여러개를 설정할수있다.*/
+}
+
+</style>
+</head>
+<body>
+
+<h3>CSS 스타일 맛보기</h3>
+<hr/>
+<p>나는 <span>웹 프로그래밍</span>을 좋아 함</p>
+</body>
+</html>

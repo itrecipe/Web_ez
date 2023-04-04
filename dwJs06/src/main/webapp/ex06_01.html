@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>이벤트리스너속성은 자바스크립트 코드로 값을 준다.</title>
+</head>
+<body>
+
+<h3>마우스를 올려 봐</h3>
+<hr/>
+<img src="media/apple.jpg" alt="image"
+	onmouseover="this.src='media/banana.png'"
+	onmouseout="this.src='media/apple.png'"/> <!-- 큰따옴표안에서는 다른(작은)따옴표를 사용해야한다 -->
+<p></p>
+<button type="button" onclick="this.innerHTML='버튼클릭후'">버튼클릭전</button>
+
+<!-- 
+- on으로 시작되는 on이벤트명 속성은 이벤트리스너 속성이라고 한다.
+이벤트리스너 속성의 값으로는 자바스크립트코드를 사용한다.
+
+- this는 현재의 태그엘리먼트를 나타내는 자바스크립트키워드이며 src는
+자바스크립트의 시작태그의 속성변수이다.
+this.src='media/banana.png'에서 = 은 자바스크립트의 대입연산자이다.
+""안에 따옴표를 사용하려면 다른 따옴표인 ''을 사용해야 한다.
+onclick은 클릭이벤트리스너속성, innerHTML은 태그의 내용을 나타낸다.
+-->
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>시각 관련 type</title>
+</head>
+<body>
+
+<h3>시간 정보 입력 HTML5 폼 요소들</h3>
+초기 세팅 : 2022년 3월 1일 밤 9시 30분(10초 32)<br/>
+시간을 변경해 보자
+<hr/>
+<!-- html의 시각표시 format를 사용하여 value값을 설정해야한다. -->
+<!-- 남짜 format은 년-월-일 -->
+<!-- datetime-local 년-월-일T시간:분:초.100의 1초 -->
+
+<form name="fn" id="fid" action="#" method="post">
+	<pre>
+		month : <input type="month" value="2022-03"><br/>
+		<!-- value에 html의 시각표시 format인 표시되는 형식은 2022-03 형태로서,
+		 	 생성되는 창은 년과 월을 선택 가능하도록 한다. -->
+		week : <input type="week" value="2022-W09"><br/>
+		<!-- value에 기본값으로 표시되는 2022-W09로 표시(몇번쨰 주) 창은 년도와 주를 선택 가능하다-->	
+		date : <input type="date" value="2022-03-03"><br/>
+		<!-- value에 기본값으로 표시는 2022-03-03으로 표시, 창은 년,월,일 선택 가능 초기값이 없으면
+		아무값도 없고 대신 선택창으로 가면 오늘 날짜를 표시한다.
+		-->
+		time : <input type="time" value="21:30"><br/>
+		<!--value 기본값은 24시 표시로 21:30표시 창은 오전 오후로 선택 하도록 한다.  -->
+		local : <input type="datetime-local" value="2022-09-01T21:30:10.32"><br/>
+		<!-- value 초기값은 2022-09-01T21:30:10:30로 시간은 100분의 1초까지 표시 날짜와 시간사이에 
+			 창은 년,월,일,시간 모두 선택하는 창이 표시된다.
+		-->
+	</pre>
+</form>
+</body>
+</html>

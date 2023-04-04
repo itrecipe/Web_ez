@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>css overflow</title>
+
+<style>
+p {
+	width : 15em; /* 기본 글자 크기의 15배 */
+	height : 3em; /* 콘테이너의 기본 글자 크기 3배 (여기 p는 body영역을 의미) */
+	border : 1px solid lightgray;	
+}
+
+.hidden {
+ 	overflow : hidden; /* hidden은 넘치는 내용은 감춘다 */
+ 	text-overflow : ellipsis; /* 넘치는 내용이 있다는 표시로서 ...으로 표시 해준다.*/
+}
+
+.visible { /* overflow의 default는 visible */
+ 	overflow : visible; /* visible은 넘치는 내용을 넘친 상태로 보여준다. */
+}
+.scroll {
+ 	overflow : scroll; /* scroll은 넘치든 안넘치든 무조건 스크롤바를 만들어 처리한다. */
+ 	height : 8em;
+}
+
+.auto {
+ 	overflow : auto; /* auto는 넘쳐서 스크롤바가 필요할때만 스크롤바를 만들어 처리한다. */
+}
+
+</style>
+</head>
+<body>
+
+<h3>overflow 프로퍼티</h3>
+<hr/>
+
+<p class="hidden">overflow에 hidden 값을 적용하면 
+		박스를 넘어가는 내용이 잘려 보이지 않습니다.
+</p><br/>
+<p class="visible">overflow에 visible 값을 적용하면
+		콘텐트가 박스를 넘어가서도 출력됩니다 (overflow의 default는 visible)
+</p><br/>
+<p class="scroll">
+	overflow에 scroll 값을 적용하면 박스에 스크롤바를 붙여 출력!(넘치지 않아도 스크롤 만들어줌)
+</p><br/>
+<p class="auto">
+	overflow에 auto 값을 적용하면
+	박스에 스크롤바가 필요시에 스크롤바를 붙여 출력!
+</p><br/>
+
+</body>
+</html>

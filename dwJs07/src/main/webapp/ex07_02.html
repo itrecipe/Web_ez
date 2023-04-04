@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h3>[]로 배열 만들기</h3>
+<hr/>
+
+<script>
+/* - 배열관련 코어 객체는 Array이다.
+   - 자바와 다른점은 배열객체 선언시 []를 사용하지 않고, 배열 원소들의 데이터형이 달라도 된다.
+   - 배열 객체 생성시 new Array()생성자 사용보다는 리터럴로 초기화하는 방식을 권고한다.
+*/
+let plots = [20, 5, 8, 15, 20]; //리터럴을 사용해 초기화, JS는 배열 선언시 배열 표시가 없다.
+document.write("var plots = [20, 5, 8, 15, 20]<br/>")
+
+for(let i=0; i < plots.length; i++) {
+	//배열의 크기를 나타내는 Array코어 객체의 속성은 length로 String코어 객체와 동일하다.
+	let size = plots[i]; //배열의 색인번호 i 요소의 값
+	while(size > 0) {
+		document.write("*");
+		size--;
+	}
+	document.write(plots[i] + "<br/>");
+}
+</script>
+</body>
+</html>

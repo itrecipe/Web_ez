@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>css transform</title>
+<style>
+div {
+	display: inline-block;
+	padding: 10px;
+	color: white;
+	background: olivedrab;
+}
+/* transform속성은 함수를 사용한다. */
+div#rotate {
+	/* rotate(20deg)는 회전시킬때 쓰는 함수 */
+	transform : rotate(20deg); /* 시계방향으로 회전 */ 
+
+}
+div#skew {
+	transform : skew(0deg, -200deg); /* 기울임 x,y각도 */
+}
+div#transrate {
+	transform : transLateY(100px); /* 이동 Y축 이동 */
+}
+div#scale {
+	transform : scale(3,1); /* scale(3,1)은 확대 축소 함수 3은 넓이 1은 높이를 의미한다. */
+}
+
+</style>
+</head>
+<body>
+
+<h3>다양한 Transform</h3>
+아래는 회전(rotate), 기울임(skew), 이동(translate),
+확대/축소(scale)가 적용된 사례이다.
+또한 마우스를 올리면 추가적 변환이 일어난다.
+<hr/>
+
+<div id="rotate">시계방향으로 rotate(20deg)</div>
+<div id="skew">skew(0, -20deg)-x축은 0도 y측은 반시계 20도</div>
+<div id="translate">translateY(100px) -Y축(수직)으로 100px 이동</div>
+<div id="scale">scale(3,1)-넓이는 3배 높이는 1배로 확대</div>
+</body>
+</html>

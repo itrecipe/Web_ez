@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>application.jsp</title>
+</head>
+<body>
+
+<%	
+	/* 로컬변수
+	 * application 내장 객체는 프로젝트(웹 애플리케이션)당 1개 생성됨
+	 * ServletContext인터페이스를 구현한 객체	
+	 */
+	String appPath = application.getContextPath();
+	String filePath = application.getRealPath("06_application.jsp");
+	String serverInfo = application.getServerInfo();
+%>
+웹 애플리케이션의 컨텍스트 패스명<br/>
+</body>
+</html>

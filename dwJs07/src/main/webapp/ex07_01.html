@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>객체 생성 및 활용</title>
+</head>
+<body>
+
+<!-- 국.변 -->
+<h3>객체 생성 및 활용</h3>
+<hr/>
+
+<script>
+/* - 코어객체는 모든 브라우져에서 사용하는 표준 객체로 대문자로 시작한다.
+   - Array, Date, String, Math,Number,Boolean,Function,Object,RegExp 등
+   - 코어 객체는 자바처럼 new키워드와 생성자를 사용해 코어 객체의 객체변수를 생성한다.
+*/
+let today = new Date(); //현재 시간을 나타내는 core객체 Date의 참조형변수(객체) today
+//Data객체가 갖고 있는 메서드나 속성을 사용할 수가 있다.
+document.write("현재 시간 : " + today.toLocaleString() + "<br/>");
+//today.toLocaleString()메서드는 코어객체 Date가 갖고 있는 메서드로 현재시각을 초까지 문자열로 반환한다.
+
+//String객체 생성
+let mystr = new String("자바스크립트 학습");
+/* - 코어객체 String의 생성자를 이용해 코어 객체의 객체변수 mystr생성
+   - 자바처럼 new를 사용한 생성보다 값을 바로 대입하는 것을 권고한다. let mystr = "자바스크립트 학습"
+*/
+document.write("mystr의 내용 : " + mystr + "<br/>");
+document.write("mystr의 길이 : " + mystr.length + "<br/>");
+//String이 갖고 있는 속성 length를 사용(문자열의 크기(원소개수))
+/* - mystr.length=10; //해당 문장은 에러가 난다, 
+	 이유는 length속성은 readonly(읽기만 가능, 변경은 x)이기 때문이다.
+*/
+
+</script>
+</body>
+</html>

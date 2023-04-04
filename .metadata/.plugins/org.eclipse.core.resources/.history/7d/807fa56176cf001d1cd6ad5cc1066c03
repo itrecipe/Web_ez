@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>removeAttribute</title>
+</head>
+<body>
+<%
+	session.setAttribute("s_name1", "저는 세션에 저장된 첫번째 값입니다!");
+	session.setAttribute("s_name1", "저는 세션에 저장된 두번째 값입니다!");
+	session.setAttribute("s_name1", "저는 세션에 저장된 세번째 값입니다!");
+%>
+</body>
+</html>

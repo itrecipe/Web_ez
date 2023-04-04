@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>css quiz</title>
+
+<style>
+/* 1 */
+#menubar {
+	text-align: center;
+}
+#menubar ul {
+	margin: 0;
+	padding: 0;
+	width: 600px;
+}
+#menubar ul li {
+	background: #fbfc97;
+	display : inline-block;
+	list-style-type: none;
+	padding: 15px 15px;
+}
+#menubar ul li a {
+	color: red;
+	text-decoration: none;
+}
+#menubar ul li a:hover {
+	display : inline-block;
+	color : #a9fa8e;
+	margin: 0 auto;
+}
+
+/* 2 */
+table {
+	border: 1px solid blue;
+	border-collapse: collapse;
+	width: 30%;
+	margin: left;
+}
+td,th {
+	border: 1px dotted green;
+	width: 100px;
+	height: 20px;
+	padding: 10px;
+	text-align: center;
+}
+thead th {
+	height: 40px;
+}
+thead, tfoot {
+	background: darkgray;
+	color: black;
+}
+td, tfoot th {
+	border-bottom: 1px solid gray;
+}
+tbody tr:nth-child(even) {
+	background: aliceblue;
+}
+tbody tr:nth-child(odd) {
+	background: pink;
+}
+tbody tr:hover {
+	background: yellow;
+}
+
+/* 3 */
+label {
+	display: block;
+	padding: 5px;
+}
+label span {
+	display: inline-block;
+	width: 90px;
+	text-align: right;
+	padding: 10px;
+}
+input[type="text"], input[type="email"], input[type="password"],
+input[type="tel"] {
+	color: blue;
+}
+input:hover, textarea:hover {
+	background: aliceblue;
+}
+input[type="text"]:focus, input[type="email"]:focus, 
+input[type="password"]:focus, input[type="tel"]:focus {
+	font-size : 100%
+	
+}
+
+</style>
+
+</head>
+<body>
+
+<h3>1.메뉴바 만들기</h3>
+<hr/>
+
+<!-- 1 -->
+<nav id="menubar">
+	<ul>
+		<li><a href="#">home</a></li>
+		<li><a href="#">Login</a></li>
+		<li><a href="#">join</a></li>
+		<li><a href="#">Board</a></li>
+		<li><a href="#">F.A.Q</a></li>
+	</ul>
+</nav>
+<br/><br/>
+
+<!-- 2 -->
+<h3>2.테이블 만들기</h3>
+<hr/>
+
+<table>
+	<thead>
+		<tr>
+			<th>번호</th>
+			<th>이름</th>
+			<th>학과</th>
+			<th>학번</th>
+			<th>전화번호</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th colspan="5">인적사항</th>		
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>궁성이형</td>
+			<td>컴퓨터공학</td>
+			<td>20230215</td>
+			<td>010-1234-5678</td>
+		</tr>		
+		<tr>
+			<td>2</td>
+			<td>자바의정석</td>
+			<td>프로그래밍언어학</td>
+			<td>20230216</td>
+			<td>010-1233-5677</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>펀치</td>
+			<td>실용음악</td>
+			<td>20230216</td>
+			<td>010-1233-5677</td>
+		</tr>
+			<tr>
+			<td>3</td>
+			<td>박혜원</td>
+			<td>실용음악</td>
+			<td>20230216</td>
+			<td>010-1233-5677</td>
+		</tr>			
+	</tbody>
+</table>
+<br/><br/><br/>
+<!-- 3 -->
+<h3>3. 회원가입 web form 생성</h3>
+<hr/>
+
+<form name="fn" id="fid" action="#" method="post">
+	<label>
+		<span>id : </span><input type="text" name="name" placeholder="id를 입력해라" required/>
+	</label>
+	<label>
+		<span>email : </span><input type="email" name="email" placeholder="email을 입력해라" required/>
+	</label>
+	<label>
+		<span>이름 : </span><input type="text" name="name" placeholder="이름을 입력해라" required/>
+	</label>
+	<label>
+		<span>비밀번호 : </span><input type="password" name="password" placeholder="p/w를 입력해라" required/>
+	</label>
+	<label>
+		<span>전화번호 : </span><input type="tel" name="tel" placeholder="010-****-****" required/>
+	</label>
+	<label>
+		<span>주소 : </span><input type="text" name="name" placeholder="ex)서울 강서구 화곡동" required/>
+	</label>
+	<label>
+		<span>자기소개 : </span>
+		<textarea name="comment" rows="10" cols="20">
+자기소개 해라
+		</textarea>
+	</label>
+	
+	<input type="submit" value="제출(확인)"/>
+	
+</form>
+</body>
+</html>
+<!-- 
+1. nav, ul, a를 활용해 수평 메뉴바를 만들어봄 메뉴 항목은
+   (home, Login, join, Board, F.A.Q)로 만듬
+2. 테이블을 생성 (번호, 이름, 학과, 학번, 전화번호)를 컬럼으로 사용
+   단일선의 테두리 사용 테이블 크기는 전체화면의 30% 사용
+   각 칸의 높이는 20px, 각 칸의 너비는 100px
+   각 칸에 padding 적용, 
+   각 줄 중(tbody)에서 홀수줄에는 pink색 짝수줄에는 aliceblue적용
+   thead나 tfoot의 줄에는 다른색을 사용,
+   각 줄에 hover효과 주기
+3. 회원가입 web form을 생성 (Id, Email, 이름, 비밀번호, 전화번호, 주소, 자기소개 항목을 갖는 폼
+   label 사용, 입력시 글자색은 blue로 하고, focus할때 글자크기 1.2배로 입력창의 배경색은 pink로
+   등 최대한 배운 css를 적용, 입력요소(콘트롤)의 크기를 100%로 해서 만들어 보자
+-->

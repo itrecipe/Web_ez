@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>alert창 만들기</title>
+<meta charset="UTF-8">
+<!--RWD-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--BS4 라이브러리-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<!--Jquery라이브러리-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<!--특수목적용 자바스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--최신버젼 자바스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<h2>Alerts(기본 클래스는 alert이며 alert-bs4 색상 단어)</h2>
+	<div class="alert alert-success">
+		<strong>Success!</strong>
+		이 alert창은 성공이나 긍정적인 의미를 나타낸다.
+	</div>
+	<div class="alert alert-info">
+		<strong>Info!</strong>
+		이 alert창은 정보를 나타내는 의미를 갖는 메시지 창이다.
+	</div>
+	<div class="alert alert-danger">
+		<strong>Danger!</strong>
+		이 alert창은 위험을 나타내는 의미를 갖는 메시지 창이다.
+		<a class="alert-link" href="#">메시지 읽기</a>
+		<!-- alert-link클래스를 a태그에 사용하면 굵은 글씨 표현, 호버시 밑줄을 표현 -->
+	</div>
+</div>
+
+<div class="container">
+	<h3>alert에 나가기 버튼 기능 추가</h3>
+	<p>alert콘테이너에 alert-dismissible클래스 추가</p>
+	<!-- fade show는 나가기시 애니메이션 효과 -->
+	<div class="alert alert-primary alert-dissmissible fade show">
+		<!-- 나가기 버튼 생성, 버튼이 우측에 배치된다. -->
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		<strong>Success!</strong>
+		이 메시치창은 주요 내용을 의미하며 나가기 버튼이 존재한다.
+	</div>
+</div>
+</body>
+</html>

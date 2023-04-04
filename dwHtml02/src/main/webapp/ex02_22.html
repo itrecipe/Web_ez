@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>inline프레임 iframe</title>
+</head>
+<body>
+
+<!-- &lt; : < , &gt; : > 이건 외우고 있어야 한다 (국쌤-tip) -->
+<h3>2개의 &lt;iframe&gt;를 가진다.</h3>
+<hr/>
+
+<!-- iframe은 인라인블록태그로 크기와 일렬배치가 가능하다. -->
+<!-- src에 iframe에 사용할 자원의 경로를 사용, 적정한 크기를 지정(아니면 default로 작게 크기를 지정) -->
+<!-- name속성은 a태그에서 target으로 사용되는 값으로 링크되는 페이지가 해당 iframe를 사용 -->
+<iframe src="iframe1.html" width="200" height="150" name="ifr1">
+	Sorry old blowers(구식을 지원하지 못하는 브라우저만 여기를 거친다.)
+</iframe>
+<iframe src="iframe2.html" width="200" height="100" name="ifr2">
+	Sorry old blowers(구식을 지원하지 못하는 브라우저만 여기를 거친다.)
+</iframe>
+
+<iframe src="iframe2.html" width="200" height="200" name="ifr3">
+	Sorry old blowers(구식을 지원하지 못하는 브라우저만 여기를 거친다.)
+</iframe>
+
+<iframe src="http://www.daum.net" width="200" height="200" name="ifr3">
+	Sorry old blowers(구식을 지원하지 못하는 브라우저만 여기를 거친다.)
+</iframe>
+
+<br/>
+<a href="http://www.daum.net" target="ifr3">다음</a>
+<!-- 다른 사이트를 iframe에 사용하려면 보안이 적용되어 접근을 거부함(사이트별로 다름 naver는 거부, daum은 허용) -->
+
+<!-- 동일한 서버의 페이지에서는 접속 가능 -->
+<a href="ex02_20.html" target="ifr3">ex02_20.html</a>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>02_research.jsp</title>
+
+<style>
+b {
+	font-size: 20px;
+}
+</style>
+</head>
+<body>
+	<h2>설문 조사 결과</h2>
+	<% 
+	/* 자바코드를 사용하는 scriptlet
+	 * 스크립트릿에선 자바방식을 사용, jsp제공, 내장 객체 사용
+	*/
+	request.setCharacterEncoding("UTF-8"); 
+	//post방식으로 요청시 한글처리는 별도로 처리, getParameter()사용 이전
+	String name = request.getParameter("name"); //input name="name"
+	out.println("이름 : <b>")
+	%>
+</body>
+</html>

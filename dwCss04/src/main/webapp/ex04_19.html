@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>글자에 그림자효과 추가</title>
+
+<style>
+div {
+	/* font의 단축형 */
+	font : normal 24px verdana;
+	/* normal은 font-style로 정상표시, font-size:24px font-family : vernada */
+}
+
+.dropText {
+	text-shadow: 3px 3px; /* 수평 수직 이격거리  blur-radius나 color(기본 검정색)는 없으면 기본 */
+}
+
+.redText {
+	text-shadow: 3px 3px red; /* 그림자 색 red */ 
+}
+
+.blurText {
+	/* .blurText는 뭉개짐 효과 */
+	text-shadow: 3px 3px 5px skyblue; /* 3번쨰 5px은 blur값*/
+}
+
+.glowEffect {
+	/* 글자와 그림자의 위치를 같게(수평,수직 이격거리 없게 표현) 하고 blur와 색만 표현 */
+	text-shadow: 0px 0px 3px red;
+}
+
+.wordArtEffect {
+	/* 글자를 wordArt형으로 효과 주기! */
+	color: white;
+	text-shadow: 0px 0px 3px darkBlue;
+}
+
+.threeDEffect {
+	color: white;
+	text-shadow: 2px 2px 4px black;
+}
+
+.multiEffect {
+	/* text-shadow효과를 여러개 사용 */
+	color : yellow;
+	text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	/* 3개값을 줄시에는 컴마(,)로 구분하여 사용! */
+}
+
+</style>
+</head>
+<body>
+
+<h3>텍스트 그림자 만들기</h3>
+<hr/>
+
+<div class="dropText">Drop Shadow</div>
+<div class=redText>Color Shadow</div>
+<div class="blurText">Blur Shadow</div>
+<div class="glowEffect">Glow Effect</div>
+<div class="wordArtEffect">wordArt Effect</div>
+<div class="threeDEffect">3D Effect</div>
+<div class="multiEffect">Multiple Shadow Effect</div>
+
+</body>
+</html>

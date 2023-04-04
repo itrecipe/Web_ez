@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>slide 효과</title>
+<meta charset="UTF-8">
+<!--RWD-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--BS4 라이브러리-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<!--Jquery라이브러리-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<!--특수목적용 자바스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--최신버젼 자바스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style type="text/css">
+.cflip,.cpanel{
+padding: 5px;
+text-align: center;
+background-color: aquamarine;
+border: 1px solid red;
+}
+.cpanel{
+padding: 50px;
+display: none;
+}
+
+</style>
+
+
+<h3>slide효과 사용</h3>
+<hr/>
+
+<h4>slide down</h4>
+<div id="flip" class="cflip">Click to slide down panel</div>
+<div id="panel" class="cpanel">Hello world</div>
+<br>
+
+<h4>slide up</h4>
+<div id="flip1" class="cflip">Click to slide up panel</div>
+<div id="panel1" class="cpanel" style="display: block;">Hello world</div>
+<br>
+
+<h4>slide toggle</h4>
+<div id="flip2" class="cflip">Click to slide toggle panel</div>
+<div id="panel2" class="cpanel">Hello world</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+   
+   $("#flip").click(function(){
+      $("#panel").slideDown("slow");
+   }),
+   $("#flip1").click(function(){
+      $("#panel1").slideUp();
+   }),
+   $("#flip2").click(function(){
+      $("#panel2").slideToggle("slow"); //slideToggle은 반복처리(up, down)
+   })
+});
+
+</script>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>리터럴로 객체 만들기</title>
+<script>
+let account = {
+	//속성들을 정의
+	owner : "황기태",
+	code : "111",
+	balance : 35000,
+	
+	//메서드 정의
+	inquiry : function(){
+		return this.balance;	
+	},
+	deposit : function(money) {
+		this.balance += money;
+	},
+	withdraw : function(money) {
+		this.balance -= money;
+		return money;
+	}
+};
+</script>
+</head>
+<body>
+
+<h3>리터럴로 사용자 객체 만들기</h3>
+<hr/>
+
+<script>
+//사용방식은 new Object()와 동일하다.
+document.write("account : ");
+document.write(account.owner + ", ");
+document.write(account.code + ", ");
+document.write(account.balance + "<br/>");
+
+account.deposit(10000); //10000원 지급
+document.write("10000원 지급 후 잔액은? " + account.inquiry() + "<br/>");
+account.withdraw(5000); //5000원 인출
+document.write("5000원 인출 후 잔액은? " + account.inquiry() + "<br/>");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>마우스관련 이벤트들</title>
+</head>
+<body>
+<h3>마우스 관련 이벤트 리스너</h3>
+<hr/>
+
+<div>
+마우스 관련
+	<span style="display:inline-block;"
+	onmousedown="down(this)" //this는 이벤트 발생 엘리먼트
+	onmouseup="up(this)"
+	onmouseover="over(this)"
+	onmouseout="out(this)"
+	onwheel="wheel(event, this)"
+	>
+	이벤트
+	</span>
+	가 발생
+</div>
+
+<script>
+let width = 1;
+function down(obj) {
+	obj.style.fontstyle = "italic";
+}
+function up(obj) {
+	obj.style.fontstyle = "normal";
+}
+function over(obj) {
+	obj.style.borderColor = "violet";
+	//테두리 폭이 0일때 색은 보이지 않는다.
+}
+function out(obj) {
+	obj.style.borderColor = "lightgray";
+	
+}
+function wheel(e, obj) {
+	//e는 event객체를 받는 파라미터로 맨처음에 와야 한다.
+	if(e.wheelDelta < 0) {
+		//wheelDelta가 음수일때 휠을 아래로 굴린다.
+		width--; //폭 1씩 감소
+		if(width < 0) {
+			width = 0;
+		}
+	}
+	else {
+		width++ //폭 1씩 증가
+	}
+	obj.style.borderStyle = "ridge";
+	obj.style.borderWidth = width + "px";
+	//css에서 width, height 크기표시를 할때 단위인 px를 붙여줘야한다.
+}
+
+
+</script>
+</body>
+</html>

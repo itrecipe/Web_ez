@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>css로 web form꾸미기</title>
+
+<style>
+label {
+	display: block;
+	padding: 5px;
+}
+label span {
+	display: inline-block; 
+	/* span은 inline으로 크기를 못가지므로 크기를 가지고 일렬 배치가 되는 inline-block으로 사용 */
+	width: 90px;
+	text-align: right;
+	padding: 10px; /* inline은 padding을 못주지만 inline-block은 가능하다. */
+}
+input[type="text"] {
+	/* 시작태그의 속성(attribute)을 선택창에 사용할때는 [속성명="값"]으로 사용한다. */
+	color: red;
+}
+input:hover, textarea:hover {
+	background: aliceblue;
+}
+input[type="text"]:focus, input[type="email"]:focus {
+	/* :focus 유사 클래스는 커서를 위치 시킬때 발생하는 상태(이벤트) */
+	font-size : 150%
+}
+
+</style>
+</head>
+<body>
+<h3>CONTACT US</h3>
+<hr/>
+
+<form name="fn" id="fid" action="#" method="post">
+	<label>
+		<span>Name : </span><input type="text" name="name" placeholder="Elvis" required/>
+	</label>
+	<label>
+		<span>Email : </span><input type="email" name="email" placeholder="admin@xxx.com" required/>
+	</label>
+	<label>
+		<span>Comment : </span>
+		<textarea name="comment" cols="20" rows="10">
+메세지 남겨라
+		</textarea>
+	</label>
+	<br/>
+	<input type="submit" value="제출"/>
+</form>
+
+</body>
+</html>

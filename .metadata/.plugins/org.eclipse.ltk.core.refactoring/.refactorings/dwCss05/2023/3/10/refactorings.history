@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ex05_09_02.html&apos; to &apos;webapp&apos;&#x0D;&#x0A;- Original project: &apos;dwCss05&apos;&#x0D;&#x0A;- Destination element: &apos;webapp&apos;&#x0D;&#x0A;- Original element: &apos;ex05_09_02.html&apos;" description="Copy file" element1="src/main/webapp/ex05_09_02.html" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1678068736497" target="/dwCss05/src/main/webapp" units="0" version="1.0"/>
+</session>

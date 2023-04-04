@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>for in문법</title>
+</head>
+<body>
+
+<h3>자바스크립트에서 for in문</h3>
+<hr/>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+const person = {fname:"John", lname:"Doe", age:25};
+let txt = "";
+for(let x in person){
+	//let 객체속성표시 변수 in 객체명
+	txt += person[x] + "<br/>"; //객체 속성접근방식인 person.fname형식이 아닌 색인번호 방식을 사용
+}
+document.getElementById("demo").innerHTML = txt;
+
+//for in문법은 배열에도 적용됨
+const cars = ["BMW", "Volvo", "Mini"];
+//배열, 믄자열, 맵, 노트리스트등을 for of 사용가능
+let text = "";
+for(let x of cars){
+	text += x + "<br/>";
+}
+document.getElementById("demo1").innerHTML = text;
+
+/*
+- for in 문법은 배열에도 적용 됨, 이렇게도 작성가능
+const cars = ["BMW", "Volvo", "Mini"];
+let txt = "";
+
+for (let x in cars) {
+   txt += cars[x] + "<br/>";
+}
+document.getElementById("demo").innerHTML = txt;
+*/
+
+
+</script>
+</body>
+</html>

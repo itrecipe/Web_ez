@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>마우스 click이벤트</title>
+</head>
+<body>
+<h3>onclick, 계산기 만들기</h3>
+<hr/>
+계산하고자 하는 수식을
+입력하고 계산 버튼을 눌러봐요.
+<br/><br/>
+
+<form>
+식 : <input type="text" id="exp" value=""><br/>
+값 : <input type="text" id="result" value="">
+<input type="button" value=" 계산  " onclick="calculate()">
+
+</form>
+
+<script>
+function calculate() {
+	let exp = document.getElementById("exp");
+	let result = document.getElementById("result");
+	
+	result.value = eval(exp.value);
+	/* - value는 DOM의 value속성으로 HTML의 value속성값을 가진다.
+	   - eval(문자열수식)함수는 전역 함수로 문자열 수식을 숫자 수식으로 계산한다.
+	*/
+}
+</script>
+</body>
+</html>

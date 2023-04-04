@@ -1,0 +1,53 @@
+package com.kook.jspCh07;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class AdditionServlet
+ */
+@WebServlet("/AddS")
+public class AdditionServlet extends HttpServlet {
+   private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public AdditionServlet() {
+        super();
+    }
+
+   /**
+    * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+    */
+   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+      //response.getWriter().append("Served at: ").append(request.getContextPath());
+      int num1 = 10;
+      int num2 = 20;
+      int add = num1 + num2;
+      
+      //전단되는 페이지에서 사용토록 attribute로 저장
+      request.setAttribute("num1", num1);
+      request.setAttribute("num2", num2);
+      request.setAttribute("add", add);
+      
+      //RequestDispatcher는 포워딩 방식으로 페이지 이동
+      RequestDispatcher dispatcher = request.getRequestDispatcher("07_addition.jsp");
+      dispatcher.forward(request, response);
+   }
+   
+
+   /**
+    * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+    */
+   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+      doGet(request, response);
+   }
+
+}

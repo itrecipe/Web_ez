@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>setTimeout 함수 사용</title>
+</head>
+<body>
+
+<h3>이미지에 마우스를 올리고 5초간 그대로 있을 때 사이트로 이동합니다</h3>
+<hr/>
+
+<img id="img" src="media/naver.gif" 
+		onmouseover="startTimer(5000)"
+		onmouseout="cancelTimer()">
+
+	
+<script>
+let timerID;
+function startTimer(time) {
+	timerId = setTimeout("load('http://www.naver.com')", time);
+	/* - window.setTimeout(타이머 시간후에 동작할 함수, 타이머 동작시간)
+	   - 위 타이머 함수를 실행할때 타이머 동작시간
+	   - 파라미터 없는 함수 호출시 함수명만 사용한다.("" 사용안함)
+	   - 파라미터 있을시는 ""안에 함수명(파라미터값,)으로 호출한다.
+	   - 익명의 함수로 만들어도 되며, 익명의 함수로 만들시 파라미터가 필요하면 블록안에서 파라미터 있는 함수를 호출한다.
+	   - setTimeout(function() {myFunc("param1", "param2")}, 2000); //파라미터를 뒤에서 전달한다.
+	   - 익명의 함수 사용시 파라미터 사용, setTimeout(function() {myFunc("param1", "param2")}, 2000); <- 이런식으로 사용할것
+	   - setTimeout()함수 다음의 코드는 타이머 동작과 상관없이 순서대로 진행한다.
+	   */
+	document.getElementById("img").title = "타이머 작동을 시작한다...";
+	
+}
+function cancelTimer() {
+	if(timerID != null) {
+		clearTimeout(timerID); //타이머 중단
+	}
+} 
+function load(url) {
+	window.location = url; //현 윈도우에 url 사이트를 로드한다.
+
+}
+</script>
+</body>
+</html>

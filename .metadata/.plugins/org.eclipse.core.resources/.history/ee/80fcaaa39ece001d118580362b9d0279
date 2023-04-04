@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>main.jsp</title>
+</head>
+<body>
+
+<%= request.getParameter("name") %>님 ㅎㅇ!
+<%--
+
+ --%>
+ <br/>
+ 내 홈페이지에 방문해줘서 고마워요!
+</body>
+</html>

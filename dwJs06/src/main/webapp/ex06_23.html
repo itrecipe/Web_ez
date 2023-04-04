@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>전역함수(window객체에 속함)</title>
+
+<script>
+function evalParseIntIsNaN() {
+	let res = eval("2*3+4*6"); //eval(숫자형 문자열 수식)은 계산결과 반환
+	document.write("eval(\"2*3+4*6\")는 32<br>");
+	let m = parseInt("32");
+	document.write("parseInt(\"32\")는 " + m + "<br/>");
+	let n = parseInt("0x32"); //16진수 32를 숫자로 변환(10진수로 변환)
+	document.write("parseInt(\"0x32\")는 " + n + "<br/><br/>");
+	
+	n = parseInt("hello"); //hello는 숫자가 아니므로 정수로 변환이 안되어 NaN을 반환
+	if(isNaN(n)) //true
+		document.write("hello는 숫자가 아님");
+	}
+</script>
+</head>
+<body>
+
+<h3>eval(), parseInt(), isNaN()</h3>
+<hr/>
+
+<script>
+evalParseIntIsNaN();
+</script>
+</body>
+</html>

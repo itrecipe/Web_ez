@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>position:relative</title>
+<style>
+div {
+	display: inline-block;
+	height: 50px; /* inline-block이름으로 크기 조절 가능 */
+	width: 50px; /* inline-block이름으로 크기 조절 가능 */
+	border: 1px solid lightgray;
+	text-align: center; /* 수평중앙 */
+	color : white;
+	background-color: red;
+}
+
+/* :hover는 유사 클래스이며 작성시 콜론을 넣고 작성한다, 
+유사클래스로 마우스를 해당 엘리먼트에 갖다대면 나타나는 셀렉터 */
+#down:hover {
+	position : relative; /* 원래 위치를 기준으로 위치 속성값에 따라 배치한다. */
+	left : 20px; /* static일때를 기준으로 왼쪽 위치값, 
+	보통 왼쪽에 효과를 주면 오른쪽은 안준다(둘다 맞추기 어렵기 때문이다.) */
+	top: 20px; /* 위로 부터의 위치값 */
+	background-color: green;
+}
+
+#up:hover {
+	position : relative; /* 원래 위치를 기준으로 위치 속성값에 따라 배치한다. */
+	right : 20px;
+	bottom : 20px;
+	background-color : green;
+	
+}
+
+</style>
+</head>
+<body>
+
+<h3>상대 배치, relative</h3>
+<hr/>
+<div>T</div>
+<div id='down'>n</div>
+<div>a</div>
+<div>n</div>
+<div id="up">k</div>
+<div>s</div>
+</body>
+</html>

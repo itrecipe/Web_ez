@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>입력힌트, 형식을 가진 입력</title>
+</head>
+<body>
+
+<h3>회원 정보 입력!</h3>
+<hr/>
+
+<!-- type="email"과 url"은 submit할시 형식을 체크해주나 tel과 search는 미래를 대비하는 예비용이라 체크해주는 기능을 제공하진 않는다.  -->
+<!-- placeholder는 입력 힌트를 알려주는 속성이고, required는 필수입력이다. -->
+<form action="#" method="post" name="fn" id="fid">
+	<label>
+		email : <input type="email" name="email" placeholder="id@host" required>
+	</label><br/>
+	<label>
+		Home : <input type="url" name="url" placeholder="http://">
+	</label><br/>	
+	<label>
+		전화번호 : <input type="tel" name="tel" placeholder="010-****-****">
+	</label><br/>
+	<label>
+		검색어 : <input type="search" name="search" placeholder="검색어">
+	</label><br/>
+	<input type="submit" value="확인"/>
+	
+</form>
+</body>
+</html>

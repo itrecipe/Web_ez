@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>print전, 후 이벤트 리스너</title>
+
+<style>
+#logoDiv {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1; /* 로고 이미지를 배경으로 배치 */
+}
+</style>
+
+<script>
+window.onbeforeprint = function(e) { 
+	/* - e는 event객체를 나타내는 파라미터
+	   - onbeforeprint리스너 속성은 DOM이 아닌 window객체에 속한 리스너 속성
+	   - print() 함수를 호출하면 발생하는 이벤트리스너
+	*/
+	let logoDiv = document.getElementById("logoDiv");
+	logoDiv.style.display = "block"; //로고가 보이게 한다 (볼록 레벨)
+	
+}
+window.onafterprint = hideLogo;
+/* - 함수명만 작성하여 리스너를 등록한다.
+   - onafterprint리스너는 print()가 출력 종료시 발생하는 이벤트리스너
+*/
+
+function hideLogo() {
+	let logoDiv = document.getElementById("logoDiv");
+	logoDiv.style.display = "none"; //로고를 보이지 않게 한다.	
+}
+</script>
+</head>
+<body>
+
+<h3>onbeforeprint, onafterprint 이벤트 예</h3>
+<hr/>
+
+<div id="logoDiv">
+	<img src="media/logo.png" alt="이미지 없습니다.">
+</div>
+
+<p>안녕하세요. 브라우저 윈도우에서는 보이지 않지만, 프린트시에는 회사 로고가 출력되는 예제를
+보입니다. 마우스 오른쪽 버튼을 눌러 인쇄 미리보기 메뉴를 선택해 보세요.
+</p>
+
+</body>
+</html>

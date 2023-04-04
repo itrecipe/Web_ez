@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%!
+	/*선언 태그로
+	*/
+	String age;
+	String name;
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>forwardResult</title>
+</head>
+<body bgcolor="pink">
+
+forward 방식으로 이동된 페이지<br/>
+<%= request.getParameter("age") %>
+<%= (String)request.getAttribute("name") %>
+<%--form에서 입력된 값은 getParameter로 setAttribute로 설정한 값은
+ getArrtibute로 반환한다. --%>
+<%
+	String age1 = request.getParameter("age");
+	String name1 = (String)request.getParameter("name");
+%>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>ex03_quiz(ch3_quiz)</title>
+</head>
+<body>
+
+<!-- 1번 -->
+<a href="https://www.w3schools.com/" target="_blank">1번 - w3(새창)</a><br/>
+
+<!-- 2번 -->
+<a href="https://www.w3schools.com/" target="_self">2번 - w3자기창<img src="media/button.png" alt="w3schools"/></a></br></br>
+<!-- target="_self"는 현재창에 이동한 페이지를 출력하며 디폴트로 target명을 _self로 작성 안해도 됨 -->
+
+<!-- 3번 -->
+<table border="1" with="150" height="150">
+	<thead>
+		<tr>
+			<th>학번</th>
+			<th>이름</th>
+			<th>생년월일</th>			
+			<th>전화번호</th>			
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>20231111</td> <!-- 일반데이터는 td를 사용 -->
+			<td>이젠</td> 
+			<td>2023-02-09</td>
+			<td>010-1234-5678</td>
+		</tr>	
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="2">학번</td> 
+			<td colspan="2">이름</td>
+		</tr>
+	</tfoot>
+</table>
+
+<!-- 4번 -->
+<!-- 아래 ul태그에는 type="circle"이렇게 줘도 빈 공백의 원이 적용되겠지만, 
+ol태그에서 쓰는 방식이니 비사용을 권고한다. -->
+<ul style="list-style-type:circle;"> 
+	<li>커피</li>
+	<li>녹차</li>
+	<li>홍차</li>
+	<li>밀크</li>	
+</ul>
+
+<!-- 5번 -->
+<form name="fn" id="fid" action="#" method="post" style="width:40%;">
+<!-- form태그에서는 그냥 width속성을 주게되면 안먹는다(지원x) 그래서 스타일로 css를 style속성을 이용하여
+ style="width:50%;" 이렇게 처리했다 알아두자-->
+	<fieldset> 
+		<legend>로그인</legend>
+		<label>
+		이메일 : <input type="email" name="email" placeholder="ex) xxx@naver.com" required><br/>
+		</label>
+		<label for="password">비밀번호 : </label>
+		<input type="password" name="password" id="password" placeholder="ex) asdf1234" required><br/>
+		<button>제출</button>&nbsp;&nbsp;&nbsp;	<!-- button은 type이 디폴트가 submit -->
+		<input type="reset" value="취소"/>
+	</fieldset>
+</form>
+
+</body>
+</html>
+
+<!-- 
+1.https://www.w3schools.com/로 link하는 태그엘리먼트를 만들고 새창에 링크페이지가 표시되도록 함, 
+  (<a>태그, target속성 사용)
+2.https://www.w3schools.com/로 link하는 태그엘리먼트를 만들고 자기창에 링크페이지가 표시되도록 하고,
+  링크텍스트는 이미지를 사용하여 이미지는 media폴더에 있는 button.png 활용 
+3.table을 만드는데 theader, tbody, tfooter을 사용하여 만듬
+  theader에는 구분 표시로 학번, 이름, 생년월일, 전화번호로 된 컬럼을 갖도록 함
+  tbody에는 구분표시에 표시된 대로 3개 정도의 행을 만들어 채움
+  tfooter에는 4개의 컬럼을 2개씩 묶어 2칸으로 만듬(내용은 없어도 됨)
+4.목록을 ul을 이용해 만드는데 마커가 하얀원으로 표시되도록 하고 항목은 커피, 녹차, 홍차, 밀크로 만듬
+5.form을 만듬
+  fieldset으로 그룹화, 제목은 로그인
+  입력 요소는 라벨이 Email이고 email을 입력하는 control을 만듬(요소명속성,힌트,필수항목 표시)
+  label을 input을 포함하는 형식으로 만듬
+
+  다른 입력 요소는 라벨이 비밀번호이고 비밀번호 입력 control을 만듬 (요소명속성,힌트,필수항목 표시)
+  label과 input이 별도로 된 label표시방법 사용하여 만듬
+  
+  submit을 control은 button을 이용하여 생성
+  reset은 control은 input을 이용하여 생성
+-->

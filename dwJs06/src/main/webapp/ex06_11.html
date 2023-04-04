@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>논리연산자</title>
+</head>
+<body>
+
+<script>
+let x=true; y=false;
+document.write("x=" + x + ", y=" + y + "<br/><br/>");
+document.write("x && y : " + (x && y) + "<br/>");
+//&&는 and연산으로 피연산자 모두가 true일때만 true
+document.write("x || y : "+ (x||y) +"<br>");
+// ||는 OR연산으로 최소한 하나라도 true이면 true
+document.write("!x : " + (!x) +"<br>"); //!연산은 결과를 반대로 변환
+document.write("<hr>");
+document.write("(3>2) && (3<4) : " + ((3>2)&&(3<4)) + "<br>");
+document.write("(3==-2) || (-1<0) : " + ((3==2)||(-1<0)));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>radio와 checkbox의 이벤트</title>
+</head>
+<body>
+
+<h3>버튼을 클릭하면 선택된 라디오 버튼의 value를 출력합니다.</h3>
+<hr/>
+
+<form>
+	<input type="radio" name="city" value="seoul" checked>서울
+	<input type="radio" name="city" value="busan">부산
+	<input type="radio" name="city" value="chunchen">춘천
+	<!--
+		- type=radio시는 name속성을 같이하여 그룹을 형성해줘야만 한개만 선택이 된다.
+		- checked속성은 선택됨을 나타내는 속성이다.
+		- value는 해당 radio를 선택할시에 얻어 지는 값이다.
+	 -->
+	 <input type="button" value="find checked" onclick="findChecked()">
+</form>
+
+<script>
+function findChecked() { 
+	let found = null; //선택된 라디오 버튼 객체
+	let kcity = document.getElementsByName("city");
+	/* - getElementsByName("name명")메서드는 name속성으로 해당 엘리먼트를 찾아 DOM객체로 변환한다.
+	   - name속성으로 찾으면 복수개가 나오게 되며, 배열 형태로 반환한다.
+	*/
+	for(let i=0; i < kcity.length; i++) {
+		if(kcity[i].checked == true){
+			//checked속성은 선택시 true가 되는 속성
+			found = kcity[i];
+		}		
+	}
+	if(found != null) {
+		alert(found.value + "가 선택됨");
+	}
+	else {
+		alert("선택된 것 없음");
+	}
+}
+</script>
+
+</body>
+</html>

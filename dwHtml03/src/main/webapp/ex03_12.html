@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>label 사용</title>
+</head>
+<body>
+
+<h3>&lt;label&gt;태그로 로그인 폼 만들기</h3>
+
+<form name="fn" id="fid" action="#" method="get">
+	<!-- label은 input요소의 이름으로 두가지로 사용한다. -->
+	<!-- label태그안에 input요소 포함, lebel도 인라인, checkbox와 radio는 처리방식이 조금 다름 -->
+	<label>
+		사용자 ID : <input type="text" name="id" size="15"/>
+	</label>
+	<p></p>
+	<!-- label과 input를 별도로 처리(for와 id속성으로 결합) -->
+	<label for="pass">비밀번호 : </label>
+	<input type="password" name="pw" id="pass"/>
+	<input type="submit" value="완료"/>
+	<br/>
+	
+</form>
+</body>
+</html>

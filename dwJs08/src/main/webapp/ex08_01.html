@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>HTML DOM의 속성들</title>
+</head>
+<body>
+
+<h3>p엘리먼트의 프로퍼티, 스타일, 이벤트 리스너를 처리하는 DOM의 속성들</h3>
+<hr/>
+
+<p id="firstP" style="color:blue; background:yellow" padding:10px"
+	onclick="this.style.color='teal'">
+	<span style="color:red">문장이다.</span>
+</p>
+
+<script>
+let p = document.getElementById("firstP"); //id가 firstP인 엘리먼트를 dom객체를 p에 대입한다.
+let text = "p.id = " + p.id + "\n";
+//html의 속성 id는 dom객체에서도 속성이 id이다(html의 속성명과 dom객체의 속성을 동일하게 사용한다.)
+text += "p.tagName = " + p.tagName + "\n";
+//DOM의 tagName속성은 태그명을 갖는 속성이다.
+text += "p.innerHTML = " + p.innerHTML + "\n";
+//DOM객체의 innerHTML은 태그엘리먼트의 내용을 나타내는 속성이다.
+text += "p.style.color = " + p.style.color + "\n";
+/* - DOM의 style속성은 HTML의 style속성이나 CSS속성을 나타내는 속성이다.
+   - html style속성 접근은 DOM에서는 style.css속성으로 접근 가능하다.
+*/
+text += "p.onclick = " + p.onclick + "\n";
+/* - html의 이벤트리스너속성은 DOM에서 동일한 이름의 속성을 가진다.
+   - 값은 이벤트 함수로 나타난다.(on이 삭제된 이름이 이벤트 처리 메서드명이다.)
+   - function click(event) {this.style.color="teal";}
+*/
+text += "p.childElementCount = " + p.childElementCount + "\n";
+/* - DOM에는 자기 엘리먼트의 자식 엘리먼트를 나타내는 children 속성이 있으며,
+     childElementCount는 자식엘리먼트의 개수를 갖는 속성이다
+*/
+text += "너비 = " + p.offsetWidth + "\n";
+text += "높이 = " + p.offsetHeight + "\n";
+//DOM객체에는 크기를 나타내는 offsetWidth, offsetHeight 속성을 갖는다.
+
+alert(text);
+
+</script>
+</body>
+</html>

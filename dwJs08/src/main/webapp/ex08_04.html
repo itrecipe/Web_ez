@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>this 키워드</title>
+</head>
+<body>
+
+<h3>this 키워드 활용</h3>
+<hr/>
+
+<!-- this키워드는 자신 객체, 이벤트 발생 객체, 함수의 owner등을 나타내는 키워드 -->
+<button onclick="change(this, '30px', 'red')">버튼</button>
+<!-- this는 자신 객체이므로 button 또는 이벤트를 발생시키는 객체이다. -->
+<button onclick="change(this, '30px', 'blue')">버튼</button>
+
+<div onclick="change(this, '25px', 'orange')" style="cursor:pointer;">
+여기를 클릭하면 크기와 색 변경
+</div>
+<script>
+function change(obj, size, color) {
+	obj.style.color = color;
+	obj.style.fontSize = size;
+}
+</script>
+</body>
+</html>

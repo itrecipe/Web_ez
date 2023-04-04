@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>사용자정의 생성자 만들기</title>
+
+<script>
+//사용자 정의 생성자는 코어객체처럼 첫글자를 대문자로 된 함수이며, 파라미터변수는 객체의 속성들 모두를 사용한다.
+function Account(owner, code, balance) {
+	//속성 정의
+	this.owner = owner;
+	this.code = code;
+	this.balance = balance;
+	//메서드 정의
+	this.inquiry = function() {
+		return this.balance;		
+	};
+	this.deposit = function(money) {
+		this.balance += money;
+	};
+	this.withdraw = function(money) {
+		this.balance -= money;
+			return money;
+	}
+}
+
+function Person(first, last, age, eye) { // (first, last, age, eye) 생성자가 가져야할 속성들
+	this.firstName = first; //this를 꼭 붙여줘야한다.
+	this.lastName = last; //이름은 꼭 같을 필요는 없다고 한다.
+	this.age = age;
+	this.eyeColor = eye;
+}
+
+</script>
+</head>
+<body>
+
+<h3>Account 프로토타입 만들기</h3>
+<hr/>
+
+<script>
+/* - 사용자 정의 생성자를 이용하여 객체 만들기
+   - 생성자를 이용해 같은 구조의 객체를 여러개 만들어 사용
+*/
+
+let account = new Account("국쌤","111-11",35000);
+let account1 = new Account("이지영","111-15",75000);
+
+/* - 생성자로 만들어진 객체에 속성이나 메서드 추가가 가능하다.
+     (단, 추가된 속성이나 메서드는 해당 객체에만 적용되고, 다른 객체에는 적용이 안된다.)
+*/
+account.pw = "12345";
+//객체 account의 속성 출력 및 메서드 사용
+document.write("account : ");
+document.write(account.owner + ", ");
+document.write(account.code + ", ");
+document.write(account.pw + ", ");
+document.write(account.balance + "<br/>");
+account.deposit(10000); //10000원 지급
+document.write("10000원 지급 후 잔액은? " + account.inquiry() + "<br/>");
+account.withdraw(5000); //5000원 인출
+document.write("5000원 인출 후 잔액은? " + account.inquiry() + "<br/>");
+
+//객체 account의 속성 출력 및 메서드 사용
+document.write("account1 : ");
+document.write(account1.owner + ", ");
+document.write(account1.code + ", ");
+//pw는 account객체에만 적용하였으므로 account1에는 적용 안된다.
+document.write(account1.balance + "<br/>");
+account1.deposit(10000); //10000원 지급
+document.write("10000원 지급 후 잔액은? " + account1.inquiry() + "<br/>");
+account1.withdraw(5000); //5000원 인출
+document.write("5000원 인출 후 잔액은? " + account1.inquiry() + "<br/>");
+</script>
+
+<h3>생성자에 원하는 속성이나 메서드를 추가하려면 prototype을 사용한다.</h3>
+<hr/>
+
+<div id="demo"></div>
+<script>
+//name메서드를 생성자 Person에 추가, 생성자로 만든 모든 객체에서 추가된 것을 사용가능하다.
+Person.prototype.name = function() {
+	return this.firstName + " " + this.lastName;
+}; //prototype은 생성자에 속성이나 메서드를 추가할시 사용
+
+const myFather = new Person("John", "Doe", 50, "blue");
+document.getElementById("demo").innerHTML =
+	"MyFather is " + myFather.name();
+
+</script>
+</body>
+</html>

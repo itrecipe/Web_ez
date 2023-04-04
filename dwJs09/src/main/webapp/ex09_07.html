@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>event객체의 preventDefault</title>
+</head>
+<body>
+
+<h3>이벤트의 디폴트 행동 취소</h3>
+<hr>
+<a href="http://www.naver.com" onclick="return query()">
+	네이버로 이동할 지 물어보는 링크
+</a>
+<!-- a태그에 출력 이벤트가 일어나면 query함수를 호출하여 해당 결과가 true이면 클릭을 수행한다, 아니면
+     클릭 처리를 수행하지 않는다.
+-->
+<hr/>
+<form action="#" method="post" id="fid" name="frm">
+	<input type="checkbox">빵(체크 됨)<br/>
+	<input type="checkbox" onclick="noAction(event)">술(체크 안됨)	
+</form>
+
+<script>
+function query() {
+	let ret = confirm("네이버로 이동할래?"); //true, false
+	return ret;
+}
+function noAction(e) {
+	e.preventDefault(); //이벤트가 일어날시 취해지는 HTML에서의 기본 처리를 취소한다.
+}
+</script>
+</body>
+</html>

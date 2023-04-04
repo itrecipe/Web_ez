@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>css 둥근 모서리</title>
+<style>
+/* border-radius는 box의 모서리를 둥글게 해준다, 모서리가 보이게 하려면 border를 
+   주던지 아니면 box에 배경색을 주면 된다. 
+*/
+p {
+	background-color: #90D000;
+	padding: 20px;
+	width: 300px; /* p의 콘텐츠 부분 넓이(내용)이므로 실제 p는 훨씬 크다(패딩, 테두리) */  
+}
+
+#round1 {
+	border-radius: 50px; /* 값이 하나면 4개 모서리 좌상, 우상, 우하, 좌하, 모서리 값 동일, radius: 둥근 모서리*/
+}
+
+#round2 {
+   border-radius : 0px 20px 40px 60px; /*값이 4개면 각 모서리별로 값*/
+}
+
+#round3 {
+   border-radius : 0px 20px 40px; /*값이 3개면 좌상,두번째는 우상,좌하(대각선) 2개 담당 */
+}
+
+#round4{
+   border-radius : 0px 20px; /*값이 2개면 대각선으로 2개씩 처리(좌상,우하-우상,좌하) */
+}
+
+#round5 {
+	border-radius : 50px; 
+	border-style : dotted; 					
+}
+
+</style>
+</head>
+<body>
+
+<h3>둥근 모서리 테두리</h3>
+<hr/>
+<!-- 각각의 태그에 다른 css적용을 위해 id속성을 사용 -->
+<p id="round1">반지름 50픽셀의 둥군 모서리(4모서리 동일)</p>
+<p id="round2">반지름 0, 20, 40, 60 둥근 모서리(좌상, 우상, 우하, 좌하)</p>
+<p id="round3">반지름 0, 20, 40, 20 둥근 모서리(3개값)</p>
+<p id="round4">반지름 0, 20, 0, 20 둥근 모서리(2개값)</p>
+<p id="round5">반지름 50의 둥근 점선 모서리(4모서리 동일)</p>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>슬라이드쇼</title>
+<meta charset="UTF-8">
+<!--RWD-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--BS4 라이브러리-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<!--Jquery라이브러리-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<!--특수목적용 자바스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--최신버젼 자바스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<base href="https://www.w3schools.com/bootstrap4/">
+
+<style type="text/css">
+.carousel.inner img {
+	/* 이미지의 크기를 콘테이너 크기에 맞게 맞춘다. */
+	width: 100%;
+	height: 100%;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<!-- - carousel클래스는 캐러셀 콘테이너생성 클래스, slide는 css transition이나 animation사용 
+     - data-ride속성은 로딩 즉시 슬라이드 시작 
+-->
+	<div id="demo" class="carousel slide" data-ride="carousel">
+	<!-- - Indicators는 캐러셀 아이템의 위치 표시
+	     - 캐러셀이 여러개 존재할 수 있으므로 indicator가 위치할 캐러셀은 data-target으로 결정
+	     - indicator콘테이너는 ul을 사용한다. 
+	-->
+	<ul class="carousel-indicators">
+		<li data-target="#demo" data-slide-to="0" class="active"></li>
+		<li data-target="#demo" data-slide-to="1"></li>
+		<li data-target="#demo" data-slide-to="2"></li>
+	</ul>
+	<!-- 캐러셀 content(내용물)의 슬라이드 쇼, 내용물은 carausel-inner콘테이너에 수용한다. -->
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="la.jpg" alt="los Angeles" width="1100" height="500">
+			<div class="carousel-caption">
+				<h3>los Angeles</h3>
+				<p>LA는 재미있는 도시!</p>
+			</div>
+		</div>
+
+		<div class="carousel-item">
+			<img src="chicago.jpg" alt="Chicago" width="1100" height="500">
+			<div class="carousel-caption">
+				<h3>Chicago</h3>
+				<p>Chicago는 재미있는 도시!</p>
+			</div>
+		</div>
+
+		<div class="carousel-item">
+			<img src="ny.jpg" alt="New York" width="1100" height="500">
+			<div class="carousel-caption">
+				<h3>New York</h3>
+				<p>New York은 재미있는 도시!</p>
+			</div>
+		</div>
+		<!-- left and right controls, 왼쪽 오른쪽의 컨트롤 버튼 -->
+		<a class="catousel-control-prev" href="#demo" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span><!-- 아이콘으로 문자열 표시 -->
+		</a>
+		<a class="catousel-control-next" href="#demo" data-slide="next">
+			<span class="carousel-control-next-icon"></span><!-- 아이콘으로 문자열 표시 -->
+		</a>
+	</div>
+</div>
+
+</div>
+</body>
+</html>

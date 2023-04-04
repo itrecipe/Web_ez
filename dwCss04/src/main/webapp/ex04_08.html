@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>케스케이딩(서로 다른 속성은 합해짐), 오버라이딩 (동일속성은 우선순위나 상속관계)로 재정의</title>
+<link href="css/external.css" rel="stylesheet" type="text/css"> <!-- 외부 css 연결 -->
+<style>
+/* 인터널 css이며 link보다 아래에 있다. 동일한 속성이 있으면 해당 파일을 적용, 반대로는 외부 css 적용 */
+p {
+	color : blue; /* 브라우저가 가진 기본 속성 color:black는 무시한다. */
+	font-size : 12px; /* 브라우저가 가진 기본 속성 font-size:16px는 무시한다. */
+}
+</style>
+</head>
+<body>
+
+<h3>p 태그에 스타일 중첩</h3>
+<p>Hello, students!</p> <!-- 외부 css background, 인터널으 color, font-size가 합해진다. -->
+<p style="font-size:25px">안녕하시오 교수님!</p>
+<!-- 인라인의 font-size가 겹쳐짐으로서 인라인것으로 "overriding" 된다. -->
+</body>
+</html>

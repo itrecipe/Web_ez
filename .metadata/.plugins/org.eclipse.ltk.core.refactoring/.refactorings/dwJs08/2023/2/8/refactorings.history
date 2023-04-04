@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;dwJs08/src/main/webapp/ex03_08.html&apos; to &apos;ex08_03.html&apos;" description="Rename resource &apos;ex03_08.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/ex03_08.html" name="ex08_03.html" stamp="1677033052518" updateReferences="true"/>
+</session>

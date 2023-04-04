@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;dwJs10/src/main/webapp/media/네이버.gif&apos; to &apos;naver.gif&apos;" description="Rename resource &apos;네이버.gif&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/media/네이버.gif" name="naver.gif" stamp="1677543616870" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;dwJs10/src/main/webapp/media/회사로고.png&apos; to &apos;logo.png&apos;" description="Rename resource &apos;회사로고.png&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/media/회사로고.png" name="logo.png" stamp="1677547394768" updateReferences="true"/>
+</session>

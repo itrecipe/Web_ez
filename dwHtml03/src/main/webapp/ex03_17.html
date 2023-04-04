@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>type number와 range control</title>
+</head>
+<body>
+
+<h3>홈 제어 시스템 - 온도 조절(number와 range속성 사용)</h3>
+<hr/>
+<form name="fn" id="fi" action="#" method="post">
+	지속시간(0.0 ~ 10.0시간) : 
+	<input type="number" name="timer" min="0.0" max="10.0" step="0.5"/>
+	<!-- number는 숫자를 증감하는 스핀창을 보여줌 step은 증감 간격, 직접입력도 가능 -->
+	<p></p>
+	<!-- &deg;는 도 기포효시 엔터티 -->
+	<!-- 슬라이드바를 사용하는 type="range" -->
+	온도 설정 : 10&deg;
+	<input type="range" name="tcontrol" min="10" max="30" list="temper"/>30&deg;
+	<datalist id="temper">
+	<!-- <option>은 데이터리스트의 항목, <label>은 표시하는 마크 -->
+		<option value="12" label="Low"></option> 
+		<option value="20" label="Medium"></option>
+		<option value="28" label="High"></option>
+	</datalist>
+	
+	<!-- datalist는 type="text"일시 드롭다운 메뉴로 보여지나, type="range"는 슬라이드바에
+		label속성으로 위치를 마커해주는 형태로 나타난다.(수평으로 표시된다.)  
+	-->
+</form>
+</body>
+</html>

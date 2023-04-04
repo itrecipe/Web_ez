@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>position:absolute</title>
+
+<style>
+div {
+	position : absolute; /* 절대 배치 */
+	border : 1px solid lightgray;
+}
+
+div > p { /* div의 자식 p */
+	display : inline-block; /* 해당 문장은 굳이 없어도 무방하다. */
+	position : absolute; 
+	/* - 기준 엘리먼트는 absolute나 relative된 가장 가까운 조상이므로 div가 된다.
+	   - 만일 해당 조상이 없으면 body를 기준으로 한다.
+	*/
+	height : 20px;
+	width : 15px;
+	background-color: lightgray;
+}
+
+</style>
+</head>
+<body>
+
+<h3>Merry Christmas!</h3>
+<hr/>
+<p>예수님이 탄생하셨다.</p>
+
+<div>
+	<img src="media/christmastree.png" width="200" height="200" alt="크리스마스 트리">
+	<!-- p엘리먼트를 그림 안으로 배치 -->
+	<p style="left:50px; top:30px">M</p>
+	<p style="left:100px; top:0px">E</p>
+	<p style="left:100px; top:80px">R</p>
+	<p style="left:150px; top:110px">R</p>
+	<p style="left:30px; top:130px">Y</p>
+</div>
+</body>
+</html>

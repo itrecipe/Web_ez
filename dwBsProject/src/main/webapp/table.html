@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>BS4 table</title>
+<meta charset="UTF-8">
+<!--RWD-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--BS4 라이브러리-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<!--Jquery라이브러리-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<!--특수목적용 자바스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--최신버젼 자바스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<h3>기본형 테이블</h3>
+	<hr/>
+	<table class="table">
+		<!-- 기본형 table로 container크기이며 수평 분할선, 약간의 패딩, th도 좌측 정렬 -->
+		<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br/><br/>
+<div class="container">
+	<h3>홀수줄에 줄무늬 있는 테이블(th있는 thead줄 제외)</h3>
+	<hr/>
+	<table class="table table-striped"> <!-- striped : 줄이라는 뜻 -->
+		<!-- 기본형 table로 container크기이며 수평 분할선, 약간의 패딩, th도 좌측 정렬 -->
+		<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br/><br/>
+<div class="container">
+	<h3>수직 테두리선 추가는 table-bordered 클래스 추가</h3>
+	<hr/>
+	<table class="table table-striped table-bordered table-hover">
+	<!-- - 줄무늬 테이블로 striped를 추가
+	     - 줄무늬 테이블로 table-bordered는 수직테두리선,
+	       table-hover는 호버시 색을 변경한다. 
+	 -->
+		<!-- 기본형 table로 container크기이며 수평 분할선, 약간의 패딩, th도 좌측 정렬 -->
+		<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br/><br/>
+<div class="container">
+	<h3>테이블 배경색 변경 table-색상 클래스 추가</h3>
+	<hr/>
+	<table class="table table-dark table-striped table-bordered table-hover">
+	<!-- - table-dark 클래스 추가시 배경색은 검정, 글자색은 흰색으로 변경된다.
+	     - table-primary도 사용가능하다.
+	-->
+	     
+		<!-- 기본형 table로 container크기이며 수평 분할선, 약간의 패딩, th도 좌측 정렬 -->
+		<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="table-primary">
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+			<tr class="table-success">
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+			<tr class="table-warning">
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="container">
+	<h3>테이블 배경색 변경 table-dark 클래스 추가</h3>
+	<hr/>
+	<table class="table table-dark table-striped table-bordered table-hover">
+	<!-- - table-dark 클래스 추가시 배경색은 검정, 글자색은 흰색으로 변경된다.
+	     - table-primary도 사용가능하다.
+	-->
+	     
+		<!-- 기본형 table로 container크기이며 수평 분할선, 약간의 패딩, th도 좌측 정렬 -->
+		<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>addEventListener메서드로 이벤트 처리</title>
+</head>
+<body onload="init()"> <!-- onload="init()"도 이벤트 리스너이다. -->
+
+<h3>addEventListener()를 이용한 리스너 등록</h3>
+<hr>
+<p id="p">마우스 올리면 orchid 색으로 변경</p>
+
+<script>
+let p;
+//아래 함수처럼 작성하는 방법을 제일 많이 사용한다.
+function init() {
+	p = document.getElementById("p");
+	p.addEventListener("mouseover", over);
+	//p.addEventListener("처리할 이벤트명(on이 없음)", 처리할 함수명(함수 이름만 작성 해야한다.));
+	p.addEventListener("mouseout", out);
+	//이벤트용 함수명 대신 직접 익명의 함수 구현도 가능하다.
+	/*
+		- p.addEventListener("mouseout", function(){처리할 코드});
+	*/
+}
+function over() {
+	p.style.backgroundColor="orchid";
+}  
+function out() {
+	p.style.backgroundColor="white";	
+} 
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;dwJs10/src/main/webapp/for Each.html&apos; to &apos;forEach.html&apos;" description="Rename resource &apos;for Each.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/for Each.html" name="forEach.html" stamp="1677721068946" updateReferences="true"/>
+</session>

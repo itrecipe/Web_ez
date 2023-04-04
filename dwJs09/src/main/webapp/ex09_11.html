@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>mousemove 이벤트와 마우스 좌표</title>
+</head>
+<body style="border: 1px solid blue;">
+
+<h3>마우스 이벤트 객체의 프로퍼티와 onmousemove</h3>
+<hr/>
+이미지 위에 마우스를 움직일 때 onmousemove 리스너가 실행되고,
+마우스의 위치를 보여줍니다.<br/><br/>
+
+<img src="media/beach.png" onmousemove="where(event)"/><br/><br/>
+<div id="div"></div>
+
+<script>
+function where(e) {
+	let text = "버튼 = " + e.button + "<br/>"; //mousemove이벤트시 button속성값은 0(좌측)
+	text += "(screenX, screenY) = " + e.screenX + "," + e.screenY + "<br/>";
+	//screenX와 screenY속성은 사용자 컴퓨터 스크린을 기준으로 하는 좌표
+	text += "(clientX, clientY) = " + e.clientX + "," + e.clientY + "<br/>";
+	//clientX와 clientY속성은 현재 윈도우창을 기준으로 하는 좌표
+	text += "(offsetX, offsetY) = " + e.offsetX + "," + e.offsetY + "<br/>";
+	//offsetX와 offsetY는 타겟객체(이벤트발생객체)를 기준으로 하는 좌표
+	text += "(x, y)=" + e.x + "," + e.y + "\n"; 
+	//x, y는 부모객체를 기준으로 하는 좌표
+	div.innerHTML = text;
+}
+</script>
+</body>
+</html>

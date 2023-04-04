@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>web form</title>
+</head>
+<body>
+
+<h3>로그인 폼</h3>
+<hr/>
+<!-- form태그(블록태그)는 입력요소인 control을 수용하는 콘테이너 -->
+<!-- form의 속성은 name, id, action(요청서버), method(전송방식) -->
+<form name="f1" id="fid" action="url" method="post" style="border:1px solid red">
+	사용자 ID : <input type="text" size="15" value=""/><br/>
+	<!-- input은 가장 많이 사용하는 입력 폼 구성요소태그로 인라인 태그이며 입력 종류는 type로 구분
+		type="text"는 한줄짜리 입력창이며 size는 입력창 크기로 입력 문자수와는 관계없음
+		value는 입력창에 보여줄 기본값이며 실제 입력하면 입력한 값으로 변경됨 -->
+	비밀번호 : <input type="password" size="15" value=""/><br/>
+	<!-- type이 password는 비밀번호 입력창으로서 입력하는 내용이 안보이고 부호로 표시됨 -->
+	<input type="submit" value="로그인">&nbsp;&nbsp;&nbsp;
+	<input type="reset" value="취소">
+	<!-- type이 submit이면 서버로 입력된 내용들을 보내는 버튼이며 value에 표시된 값이 버튼명으로 보인다.
+		 reset은 취소 버튼
+	-->
+</form>
+
+<p></p>
+<h3>네이버로 form 데이터 보내기</h3>
+<hr/>
+<form name="sform" action="https://search.naver.com/search.naver" method="get">
+<!-- method="get" -> 해당 방식은 굳이 안적어줘도 기본적으로 적용된다. -->
+	검색 단어 : <input name="query" type="text" ><br/>
+	<!-- name속성은 서버로 보낼때 서버에서 사용할 요소명을 나타내는 속성으로 서버에서 해당 값으로 구분하여 처리한다(필수!) -->
+	<!-- 만일, name속성이 없으면 submit클릭시 서버로 안보낸다. -->
+	<!-- method가 get방식일시 요청경로 뒤에 ?query=입력값으로 보냄 -->
+	<!-- https://search.naver.com/search.naver?query=white -->
+	<!-- 주소창에 보내는 내용이 안보이게 또는 많이 보내야할때 사용 하려면 post(방식)으로 보냄 -->
+	<input type="submit" />
+</form>
+</body>
+</html>

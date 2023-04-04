@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>const로 배열변수 선언</title>
+</head>
+<body>
+
+<h3>const를 이용해 배열 변수를 만들면 원소 변경이 가능하다.</h3>
+<hr/>
+
+<p id="demo"></p>
+
+<script>
+/* - const로 만든 변수는 참조형 형식으로 메모리 주소를 참조한다.
+   - 동일한 주소의 속성, 배열 원소 값은 변경이 가능하다.
+*/
+
+const cars = ["Saab", "volvo", "BMW"]; //선언과 동시에 초기화
+//cars = ["kia", "hyyndai", "toyota"]; 는 새로운 배열이므로 에러가 발생한다.
+cars[0] = "kia"; //색인번호를 이용해 원소 변경은 가능하다.
+cars.push("Audi"); //마지막에 원소를 추가한다.
+
+document.getElementById("demo").innerHTML = cars;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>조건연산자(삼항연산자)</title>
+</head>
+<body>
+
+<h3>조건연산</h3>
+<hr/>
+
+<script>
+let a=3, b=5;
+document.write("a=" + a + ", b=" + b + "<br/><br/>");
+document.write("두수의 차이 : " + ((a > b) ? (a-b) : (b-a))); //절대값 구하기
+//조건연산은 아래의 if~else를 간단리 처리한다.(자바와 동일하다)
+if(a > b) {
+	alert("a가 큰 경우 : " + (a-b));
+}
+else {
+	alert("b가 큰 경우 : " + (b-a));
+}
+</script>
+</body>
+</html>

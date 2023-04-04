@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>window open</title>
+</head>
+<body>
+
+<h3>window.open()으로 윈도우 열기</h3>
+<hr/>
+
+<a href="javascript:load('http://www.graceland.com')">엘비스 프레슬리 홈페이지</a><br/>
+<a href="javascript:load('http://www.universalorlando.com')">유니버셜 올랜드 홈페이지</a><br/>
+<a href="javascript:load('http://www.disneyworld.com')">디즈니 월드 홈페이지</a><br/>
+
+<script>
+function load(URL) {
+	window.open(URL, "myWin", "left=300, top=300, width=400, height=300");
+	/* - 이름이 myWin으로 없을시에는 새로 만들고 열려 있으면 그 윈도우에 출력한다.
+	   - URL은 파라미터로 받은 웹페이지 주소
+	   - left는 좌측 좌표, top은 상의 좌표 width, height는 크기
+	*/
+	
+}
+</script>
+
+</body>
+</html>

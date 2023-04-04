@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>getSession</title>
+</head>
+<body>
+
+<h3>세션 값 얻어오기</h3>
+<%-- getAttribute(속성명)은 반환이 Object이므로 형변환 처리를 해주고,
+  -- 테스트시에는 setAttribute 페이지 실행해야 한다.(같은 브라우저에서 실행해야 한다.)
+--%>
+<%
+String id = (String)session.getAttribute("id");
+String pwd = (String)session.getAttribute("pwd");
+int age = (Integer)session.getAttribute("age");
+%>
+<%--표현식에서는 지정된 변수명으로 작성하면 된다.--%>
+id : <%= id %><br/>
+pwd : <%= pwd %><br/>
+age : <%= age %><br/>
+</body>
+</html>

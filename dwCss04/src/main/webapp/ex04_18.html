@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>css background 속성들</title>
+
+<style>
+div {
+	background-color: skyblue;
+	background-image: url("media/spongebob.png");
+	background-position: center center; 
+	/* - 배경 이미지 위치는 수평 left, center, right 사용 
+	   - 수직 방향은 top center bottom 사용
+	*/
+	background-size: 100px 100px; /* 배경 이미지 크기 width height*/
+	background-repeat: repeat-y; /* 수직방향으로만 반복해서 이미지를 채운다. */
+	/* 수평으로 반복 배치는 repeat-x, 수평 수직 모두 반복은 repeat, 반복 안함은 no-repeat */
+}
+
+/* 하나의 셀렉터에 대한 css를 분할해서 작성하는것도 가능하다. */
+div {
+	width: 200px;
+	height: 200px;
+	color: blueviolet;
+	font-size: 16px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h3>div 박스에 배경 꾸미기</h3>
+<hr/>
+
+<div>
+SpongeBob is an over-optimistic
+sponge that annoys other characters. 
+</div>
+
+</body>
+</html>

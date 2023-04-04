@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>a태그의 download속성 사용</title>
+</head>
+<body>
+
+<h3>님들아! 여기서 다운받어!</h3>
+<hr/>
+
+<!-- download는 속성인데 = "값" 없이 사용 -->
+<!-- 동일한 서버에 있는 자원만 가능하다 (이유:보안문제) -->
+<!-- 예전 다운로드는 서버 프로그램에서 처리했다 -->
+<ul>
+	<li><a href="media/Elvis.png" download>엘비스 이미지 다운로드</a></li>
+	<li><a href="media/chapter9.pdf" download>chapter9.pdf</a></li>
+	<li><a href="media/EmbraceableTou.pdf" download>mp3 다운로드</a></li>
+	<li><a href="ex02_09.html" download>예제 2-9 HTML 파일 다운로드</a></li>
+	<li><a href="media/test.hwp" download>한글 파일 다운로드</a></li>
+	<li><a href="D:\h\test.txt" download>일반 파일 다운로드</a></li>
+	<!-- 서버가 아닌 자기 pc의 일반 파일은 보안상 다운로드 x -->
+	
+	<!-- 이미지를 먼저 보여 주고 다운로드 하는 방법(단, 서버없이 동작불가) -->
+	<li><a href="media/Elvis.png" download>
+		<img src="media/Elvis.png" width="150" height="150">
+	</a></li>
+	
+</ul>
+</body>
+</html>

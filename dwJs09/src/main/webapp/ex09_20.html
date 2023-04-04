@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>key event</title>
+<!-- 국.변 -->
+</head>
+<body>
+<h3>키 리스너와 키 이벤트 객체의 프로퍼티</h3>
+<hr/>
+
+텍스트 창에 키를 눌러 보세요. Alt, Shift, Ctrl 키도 가능합니다.<br/>
+
+<input type="text" id="text" onkeydown="whatkeyDown(event)"/>
+<!--
+	- onkeydown은 모든키를 누르는 순간 발생하는 리스너
+	- onkeypress는 일부키는 처리 하지 못한다.
+	- onkeyup은 누른 키를 때는 순간 발생하는 리스너
+ -->
+<div id="div" style="background-color: skyblue; width: 250px; height: 50px;">
+</div>
+
+<script>
+let str = ""; //String객체의 초기화로 new String() 보다는 해당 코드로 작성(초기화)하는것을 권고한다.
+function whatkeyDown(e) {
+	//e는 전달받은 event객체
+	let div = document.getElementById("div");
+	div.innerHTML = "";
+	if(e.isComposing == false) {
+		//isComposing속성은 한글 입력시 발생하는 예외를 처리한다.
+		str += e.key;
+	} 
+	else {
+		return; //함수 종료
+	}
+	
+	div.innerHTML = str;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>함수만들기</title>
+
+<script>
+//함수 선언, 더하기 함수
+function adder(a, b) {
+	let sum = 0;
+	sum = a + b;
+	return sum;
+}
+</script>
+</head>
+<body>
+
+<h3>함수 adder()</h3>
+<hr/>
+
+<div id="result">결과값을 표시하는 곳</div>
+
+<!-- <script>
+//나누기 함수
+function divider(x, y) {
+	let result = x / y;
+	return result;
+}
+</script> -->
+
+<script>
+/* - 함수를 호출하여 해당 결과값을 변수에 저장한다.
+   - 함수는 자기 script 블록안에 있거나 위의 블록에 있는 것만 호출 가능하다.
+*/
+
+let n = adder(24567, 98734);
+document.write("24567 + 98374는 " + n + "<br/>");
+
+let res = divider(2500, 50);
+document.getElementById("result").innerHTML = res; //getElementById는 어떠한 태그엘리턴트에 있는걸 찾을때 사용
+
+//나누기 함수
+function divider(x, y) {
+	let result = x / y;
+	return result;
+}
+</script>
+
+</body>
+</html>

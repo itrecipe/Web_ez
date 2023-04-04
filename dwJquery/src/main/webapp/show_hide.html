@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>show & hide</title>
+<meta charset="UTF-8">
+<!--RWD-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--BS4 라이브러리-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<!--Jquery라이브러리-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<!--특수목적용 자바스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--최신버젼 자바스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<p>show & hide Test</p>
+<button type="button" id="hide">Hide</button>
+<button type="button" id="show">Show</button>
+<br/>
+<button type="button" id="toggle">Toggle</button>
+
+<script>
+$(document).ready(function(){
+	/* - hide(speed, callback)인데 파라미터 모두 선택(옵션)항목, 필요하면 사용하고 필요없으면 사용하지 않는다는 의미이다.
+	   - speed fast, slow, 밀리세컨드(1000)이고 callback은 show나 hide 메서드 실행완료 후 실행 될 함수를 의미한다.
+	   - speed는 기본값이 fast이다.
+	   - show()도 동일하다.
+	*/
+	$("#hide").click(function(){
+		//$("p").hide("slow");
+		$("p").hide(1000);
+	});
+	
+	$("#show").click(function(){
+		//$("p").show("fast");
+		$("p").show(1000);
+	});
+	
+	$("#toggle").click(function(){
+		$("p").toggle(); //show, hide를 반복한다.
+		//toggle(speed, callback)
+	});
+});
+</script>
+</body>
+</html>

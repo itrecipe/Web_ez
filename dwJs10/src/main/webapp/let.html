@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- 국쌤예제(추가설명) -->
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>let 변수 선언</title>
+</head>
+<body>
+
+<h3>let를 사용하여 변수 재정의</h3>
+<hr/>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+let x = 10; //글로벌 변수
+//일반 블록
+{
+	let x = 2; //x는 일반 블록의 로컬 변수
+}
+document.getElementById("demo").innerHTML = x; //블록 밖에서 사용되므로 글로벌 변수값
+
+let y = 2;
+/* - let y = 5; let는 같은 범위의 변수일때는 재정의 x
+   - let은 함수블록, for, if, while, 일반 (블록) 등 모든 블록에서 로컬변수를 생성한다.
+*/
+{
+	let y = 3; //일반 블록안의 로컬 변수이므로 허용 된다.	
+}
+
+{
+	let y = 4; //허용
+}
+
+//블록 밖이므로 글로벌 변수값 2가 저장됨
+document.getElementById("demo1").innerHTML = y;
+
+</script>
+</body>
+</html>

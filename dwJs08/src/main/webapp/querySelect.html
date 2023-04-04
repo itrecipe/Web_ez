@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>querySelector로 DOM찾기</title>
+</head>
+<body>
+
+<h1>A H1 element</h1>
+<h2>A H2 element</h2>
+<h3>A H3 element</h3>
+<div>A DIV element</div>
+<P>A p element.</P>
+<P>A p element with a <span style="color:brown;">span</span>element inside.</P>
+
+<a href="https://www.w3schools.com">w3schools.com</a>
+<a href="https://www.disney.com" target="_blank">disney.com</a>
+<a href="https://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+
+<script>
+const nodeList = document.querySelectorAll("h3, div, span");
+/* - const도 let처럼 ES6부터 사용하는 변수 선언 키워드(값 변경이 객체형 외에는 안되며 객체형 변수에 많이 사용한다.)   
+   - querySelectorAll이나 querySelector는 파라미터로 css의 selector문법을 사용한다.
+   - css셀렉터문을 사용하므로 선택 폭이 넓다.
+*/
+for(let i=0; i < nodeList.length; i++) {
+	nodeList[i].style.backgroundColor = "red";
+}
+let aList = document.querySelectorAll("a[target]");
+//시작태그가 a이고 target속성이 있는 엘리먼트를 선택
+for(let i=0; i < aList.length; i++){
+	aList[i].style.border = "10px solid red";
+}
+
+let bList = document.querySelector("a[target]");
+//document.querySelector는 일치하는 DOM중 맨처음거만 선택
+bList.style.backgroundColor = "green";
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>07_addition.jsp</title>
+</head>
+<body>
+
+고전적인 방식 :
+<%
+int num1 = (Integer) request.getAttribute("num1"); 
+/* setAttribute로 설정된 attribute는 
+   getAttribute(속성명)로 반환(반환타입이 Object이므로 형변환)을 해야 한다.
+*/
+int num2 = (Integer) request.getAttribute("num2");
+%>
+<%=num1%>
++
+<%=num2%>
+=
+<%=num1 + num2%>
+<hr/>
+<%--설정시 request에 속성을 저장 헀으므로 requestScope.num1이나 자동 처리 --%>
+EL방식 : ${num1} + ${num2} + ${add}
+</body>
+</html>

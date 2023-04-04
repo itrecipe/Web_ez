@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>badge</title>
+<meta charset="UTF-8">
+<!--RWD-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--BS4 라이브러리-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<!--Jquery라이브러리-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<!--특수목적용 자바스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--최신버젼 자바스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<h3>내용 강조를 위한 배치 처리</h3>
+	<h4>
+	주요하고 강조할 내용으로 배지를 달아준다.(신상품 강조 badge-pill은 모서리를 둥글게 표현)
+	<span class="badge badge-success badge-pill">New</span>
+	</h4>
+</div>
+<br/><br/>
+<div class="container">
+	<h4>버튼안에 배지 사용</h4>
+	<button type="button" class="btn btn-primary">
+	메시지 <span class="badge badge-light">4</span>
+	</button>
+	<button type="button" class="btn btn-danger">
+	메시지 <span class="badge badge-light">7</span>
+	</button>
+</div>
+</body>
+</html>

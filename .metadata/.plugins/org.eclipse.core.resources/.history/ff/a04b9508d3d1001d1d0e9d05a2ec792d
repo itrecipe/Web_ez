@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>oldRenual</title>
+</head>
+<body>
+
+자바 코드
+<hr/>
+<%
+if(request.getParameter("id") != null) {
+%>
+== 연산자 사용 결과 :
+<%=request.getParameter("id") == "pinksung" %><br/>
+equals() 사용 결과 :
+<%=request.getParameter("id").equals("pinksung") %><br/>
+<%
+} else {
+	out.print("id를 전달하라");
+}
+%>
+<%--출력값을 확인하려면 
+http://localhost:8181/jspCh06/05_oldRenual.jsp?id=pinksung 입력하여 출력값을 확인하면 되며,
+post방식으로 전달할시에는 이방식을 사용하면 출력이 되지 않는다. get방식만 사용가능하다.
+ --%>
+</body>
+</html>

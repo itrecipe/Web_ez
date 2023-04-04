@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>DOM의 innerHTML속성</title>
+</head>
+<body>
+
+<h3>innerHTML 활용 : 아래 글자에 클릭하면 예쁜 강아지가 보입니다.</h3>
+<hr/>
+
+<p id="firstP" style="color:blue; cursor:pointer;" onclick="change()">
+	여기를 <span id="span" style="color:red">클릭해</span>
+</p>
+<br/><br/>
+
+<p id="firstP1" style="color:blue; cursor:pointer;" onclick="change1()">
+	여기를 <span style="color:red">클릭해-1</span>
+</p> 
+
+<script>
+function change() {
+	let p = document.getElementById("firstP");
+	//p.style.cursor = "pointer";
+	p.innerHTML = "나의 <img src='media/펀치.jpg'> 펀치";
+}
+
+function change1() {
+	let p = document.getElementById("firstP1");
+	p.innerHTML = "나의 <img src='media/강아지.png'> 강아지";
+}
+</script>
+
+</body>
+</html>
