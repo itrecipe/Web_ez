@@ -5,14 +5,14 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt"  prefix="fmt" %>
 
 <%! //선언부는 첫 방문자에 의해서 단 한번 수행합니다.
-//선언부는 <!DOCTYPE html>태그 위에 작성하는 것이 제일 바람직하다.
-Connection conn = null;
-Statement stmt =  null;
-ResultSet rs = null;
-String url = "jdbc:oracle:thin:@localhost:1521:xe";
-String uid = "scott";
-String pass = "tiger";
-String sql = "select * from member";
+	//선언부는 <!DOCTYPE html>태그 위에 작성하는 것이 제일 바람직하다.
+	Connection conn = null;
+	Statement stmt =  null;
+	ResultSet rs = null;
+	String url = "jdbc:oracle:thin:@localhost:1521:xe";
+	String uid = "scott";
+	String pass = "tiger";
+	String sql = "select * from member";
 %>
 
 <!DOCTYPE html>
@@ -30,7 +30,7 @@ String sql = "select * from member";
 <th>암호</th>
 <th>이메일</th>
 <th>전화번호</th>
-<th>권한(1:관리자, 2:일반회원)</th>
+<th>권한(0:관리자, 1:일반회원)</th>
 </tr>
 <%
 try{
@@ -50,9 +50,8 @@ try{
       out.println("<td>" + rs.getInt("admin") + "</td>"); //DB의 데이터형이 number일시 getInt("컬럼명")
       out.println("</tr>");
    }//while의 끝
-}
-	catch(Exception e){
-		e.printStackTrace();
+} catch(Exception e){
+	e.printStackTrace();
 } finally {
    try{
    if(rs != null)
@@ -70,6 +69,5 @@ try{
 }
 %>
 </table>
-
 </body>
 </html>
