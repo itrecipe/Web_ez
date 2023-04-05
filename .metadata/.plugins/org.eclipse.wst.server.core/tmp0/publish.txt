@@ -1,10 +1,11 @@
 #Tomcat publish data
-#Wed Apr 05 10:45:52 KST 2023
+#Wed Apr 05 12:46:21 KST 2023
 org.eclipse.jst.jee.server\:jspCh04=D\:\\h\\apache-tomcat-9.0.71\\wtpwebapps\\jspCh04
 org.eclipse.jst.jee.server\:jspCh03=D\:\\h\\apache-tomcat-9.0.71\\wtpwebapps\\jspCh03
 org.eclipse.jst.jee.server\:jspCh06=D\:\\h\\apache-tomcat-9.0.71\\wtpwebapps\\jspCh06
 org.eclipse.jst.jee.server\:jspCh05=D\:\\h\\apache-tomcat-9.0.71\\wtpwebapps\\jspCh05
 org.eclipse.jst.jee.server\:dwJs10=D\:\\h\\apache-tomcat-9.0.71\\wtpwebapps\\dwJs10
+org.eclipse.jst.jee.server\:jspCh08=D\:\\h\\apache-tomcat-9.0.71\\wtpwebapps\\jspCh08
 org.eclipse.jst.jee.server\:jspCh07=D\:\\h\\apache-tomcat-9.0.71\\wtpwebapps\\jspCh07
 org.eclipse.jst.jee.server\:dwJquery=D\:\\h\\apache-tomcat-9.0.71\\wtpwebapps\\dwJquery
 org.eclipse.jst.jee.server\:dwTest=D\:\\h\\apache-tomcat-9.0.71\\wtpwebapps\\dwTest

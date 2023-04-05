@@ -156,7 +156,7 @@
 	<Context docBase="dwJs08" path="/dwJs08" reloadable="true" source="org.eclipse.jst.jee.server:dwJs08"/>
 	<Context docBase="jspCh03" path="/ch03jsp" reloadable="true" source="org.eclipse.jst.jee.server:jspCh03"/>
 	<!-- docBase는 프로젝트명 path는 컨텍스트 패스명 -->
-	<Context docBase="jspCh04" path="/jspCh04" reloadable="true" source="org.eclipse.jst.jee.server:jspCh04"/><Context docBase="jspCh05" path="/jspCh05" reloadable="true" source="org.eclipse.jst.jee.server:jspCh05"/><Context docBase="jspCh06" path="/jspCh06" reloadable="true" source="org.eclipse.jst.jee.server:jspCh06"/><Context docBase="jspCh07" path="/jspCh07" reloadable="true" source="org.eclipse.jst.jee.server:jspCh07"/></Host>
+	<Context docBase="jspCh04" path="/jspCh04" reloadable="true" source="org.eclipse.jst.jee.server:jspCh04"/><Context docBase="jspCh05" path="/jspCh05" reloadable="true" source="org.eclipse.jst.jee.server:jspCh05"/><Context docBase="jspCh06" path="/jspCh06" reloadable="true" source="org.eclipse.jst.jee.server:jspCh06"/><Context docBase="jspCh07" path="/jspCh07" reloadable="true" source="org.eclipse.jst.jee.server:jspCh07"/><Context docBase="jspCh08" path="/jspCh08" reloadable="true" source="org.eclipse.jst.jee.server:jspCh08"/></Host>
     </Engine>
   </Service>
 </Server>
