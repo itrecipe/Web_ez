@@ -54,8 +54,6 @@ public class MemberVO {
 		return email;
 	}
 
-
-
 	public void setEmail(String email) {
 		this.email = email;
 	}

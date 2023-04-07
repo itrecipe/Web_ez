@@ -49,9 +49,10 @@ public class MemberDAO {
 	            if(rs.getString("pwd") != null && rs.getString("pwd").equals(pwd)) {
 	               result = 1; //정상 로그인
 	            } else{result = 0;
-	            } //pwd 틀림   
+	            } //pwd 틀림
 	         }
-	         else {result = -1; //id 없음
+	         else {
+	        	 result = -1; //id 없음
 	         }
 	      } catch (Exception e) {
 	         e.printStackTrace();

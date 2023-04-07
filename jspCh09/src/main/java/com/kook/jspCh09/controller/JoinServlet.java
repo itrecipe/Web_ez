@@ -15,7 +15,7 @@ import com.kook.jspCh09.dto.MemberVO;
 /**
  * Servlet implementation class JoinServlet
  */
-@WebServlet("../join.do")
+@WebServlet("/join.do")
 public class JoinServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
