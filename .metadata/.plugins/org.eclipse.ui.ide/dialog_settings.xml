@@ -14,6 +14,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\h\work_web_ez\jspCh09"/>
 			<item value="D:\h\work_web_ez\work_web(3).zip"/>
 			<item value="D:\h\work_web_ez"/>
 		</list>
