@@ -53,6 +53,7 @@ public class MemberUpdateServlet extends HttpServlet {
 		request.setCharacterEncoding("UTF-8"); // 포스트 방식에서 클라이언트 입력 한글 깨짐을 방지
 		// 폼에서 입력한 회원 정보 얻어오기
 		//파라메터는 form의 name="값"의 값, 반환값은 모두 문자열
+		String name = request.getParameter("name");
 		String userid = request.getParameter("userid");
 		String pwd = request.getParameter("pwd");
 		String email = request.getParameter("email");
@@ -60,6 +61,7 @@ public class MemberUpdateServlet extends HttpServlet {
 		String admin = request.getParameter("admin");
 		// 회원 정보를 저장할 객체 생성
 		MemberVO mVo = new MemberVO();
+		mVo.setName(name);
 		mVo.setUserid(userid);
 		mVo.setPwd(pwd);
 		mVo.setEmail(email);
@@ -69,5 +71,4 @@ public class MemberUpdateServlet extends HttpServlet {
 		int result = mDao.updateMember(mVo); //MemberDao의 업데이트 처리하는 메서드 호출
 		response.sendRedirect("login.do"); //forward방식이 아닌 sendRedirect로 페이지 이동(브라우져가 다시 접속 요청)
 	}
-
 }
