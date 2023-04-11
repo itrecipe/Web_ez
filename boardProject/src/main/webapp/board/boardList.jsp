@@ -15,8 +15,8 @@
 		<h1>게시글 리스트</h1>
 		<table class="list">
 			<tr>
-				<td colspan="5" style="border: white; text-align: right"><a
-					href="BoardServlet?command=board_write_from">게시글 등록</a></td>
+				<td colspan="5" style="border: white; text-align: right">
+					<a href="BoardServlet?command=board_write_from">게시글 등록</a></td>
 			<tr>
 				<th>번호</th>
 				<th>제목</th>
