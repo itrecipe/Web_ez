@@ -15,6 +15,6 @@
 
 <!-- 프로젝트 실행시 맨처음 페이지 -->
 <!-- 테스트를 위해 클릭시 첫 페이지로 이동하도록 처리 -->
-<!-- <a href="BoardServlet?command=board_list">게시판 리스트</a>  -->
+<!-- <a href="BoardServlet?command=board_list">게시판 리스트</a> -->
 </body>
 </html>
