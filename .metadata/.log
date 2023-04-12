@@ -9718,3 +9718,6 @@ org.eclipse.wst.xml.core.internal.document.StructuredDocumentRegionManagementExc
 
 !ENTRY org.eclipse.lsp4e 1 0 2023-04-12 09:47:57.788
 !MESSAGE [Info]	[lspserver] No content was available for completion request
+
+!ENTRY org.eclipse.lsp4e 1 0 2023-04-12 10:32:38.081
+!MESSAGE [Info]	ESLint server running in node v16.13.0

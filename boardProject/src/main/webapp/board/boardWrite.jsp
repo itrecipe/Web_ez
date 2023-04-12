@@ -6,16 +6,15 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>boardWrite - 게시글 입력</title>
+<title>boardWrite 게시글 입력</title>
 
-<link rel="stylesheet" type="text/css" href="css/board.css">
-<script src="script/board.js">
-</script>
+<link rel="stylesheet" type="text/css" href="../css/board.css">
+<script type="text/javascript" src="../script/board.js"></script>
 </head>
 <body>
 <div id="wrap" align="center">
 <h1>게시글 등록</h1>
-<form name="frm" method="get" action="BoardServlet">
+<form name="frm" method="post" action="BoardServlet">
 	<!--hidden은 command를 서버로 보내기 위해 안보이게 정의  -->
 	<input type="hidden" name="command" value="board_write">
 	<table>

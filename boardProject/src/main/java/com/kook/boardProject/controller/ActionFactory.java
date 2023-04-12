@@ -2,7 +2,7 @@ package com.kook.boardProject.controller;
 
 import com.kook.boardProject.command.Action;
 import com.kook.boardProject.command.BoardListAction;
-import com.kook.boardProject.command.BoardWriteFromAction;
+import com.kook.boardProject.command.BoardWriteFormAction;
 
 public class ActionFactory {
 	
@@ -29,10 +29,10 @@ public class ActionFactory {
 			action = new BoardListAction();
 		}
 		
-		
 		else if(command.equals("board_write_form")) {
-			action = new BoardWriteFromAction();
+			action = new BoardWriteFormAction();
 		}
+		
 		/*
 		else if(command.equals("board_write")) {
 			action = new BoardWriteAction();
