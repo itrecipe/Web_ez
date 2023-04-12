@@ -22,5 +22,6 @@
     <fullyQualifiedTypeName name="com.kook.boardProject.dao.BoardDAO"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.kook.boardProject.dto.BoardVO"/>
+    <fullyQualifiedTypeName name="com.kook.boardProject.command.BoardWriteFromAction"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 </qualifiedTypeNameHistroy>

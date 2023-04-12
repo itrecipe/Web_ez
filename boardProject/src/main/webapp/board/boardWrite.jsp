@@ -8,8 +8,8 @@
 <meta charset="UTF-8">
 <title>boardWrite 게시글 입력</title>
 
-<link rel="stylesheet" type="text/css" href="../css/board.css">
-<script type="text/javascript" src="../script/board.js"></script>
+<link rel="stylesheet" type="text/css" href="css/board.css">
+<script type="text/javascript" src="script/board.js"></script>
 </head>
 <body>
 <div id="wrap" align="center">
