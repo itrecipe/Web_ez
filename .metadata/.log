@@ -10199,3 +10199,714 @@ org.eclipse.core.runtime.OperationCanceledException:
 !MESSAGE Multiple Contexts have a path of "/dwJs06".
 !SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 09:42:05.581
 !MESSAGE Multiple Contexts have a path of "/dwJs08".
+!SESSION 2023-04-13 11:16:07.346 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=15.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jface 2 0 2023-04-13 11:17:41.441
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-04-13 11:17:41.441
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@49b6373f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@20f3291d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-04-13 11:17:41.441
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2f51b100,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@654dbb78,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2023-04-13 11:17:47.277
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2023-04-13 11:17:47.278
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-04-13 11:17:47.381
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\404-11'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2023-04-13 11:18:01.042
+!MESSAGE Setup tasks were performed during startup updating 5 preferences. See 'D:\h\eclipse_Web\configuration\org.eclipse.oomph.setup\setup.log' for details
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/dwBsProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/ch03jsp".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/jspCh05".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/jspCh07".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/jspCh09".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/dwHtml02".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/dwJquery".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/dwCss04".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/dwJs07".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/dwJs09".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/dwJs10".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/jspCh02".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/jspCh04".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/jspCh06".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/jspCh08".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/dwTest".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/jspProjectCh01".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/dwHtml03".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/dwCss05".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.411
+!MESSAGE Multiple Contexts have a path of "/dwJs06".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:18:52.412
+!MESSAGE Multiple Contexts have a path of "/dwJs08".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.765
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.765
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.765
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.765
+!MESSAGE Multiple Contexts have a path of "/dwBsProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.765
+!MESSAGE Multiple Contexts have a path of "/ch03jsp".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.765
+!MESSAGE Multiple Contexts have a path of "/jspCh05".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.765
+!MESSAGE Multiple Contexts have a path of "/jspCh07".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.765
+!MESSAGE Multiple Contexts have a path of "/jspCh09".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.765
+!MESSAGE Multiple Contexts have a path of "/dwHtml02".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.765
+!MESSAGE Multiple Contexts have a path of "/dwJquery".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.765
+!MESSAGE Multiple Contexts have a path of "/dwCss04".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.766
+!MESSAGE Multiple Contexts have a path of "/dwJs07".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.766
+!MESSAGE Multiple Contexts have a path of "/dwJs09".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.766
+!MESSAGE Multiple Contexts have a path of "/dwJs10".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.766
+!MESSAGE Multiple Contexts have a path of "/jspCh02".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.766
+!MESSAGE Multiple Contexts have a path of "/jspCh04".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.766
+!MESSAGE Multiple Contexts have a path of "/jspCh06".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.766
+!MESSAGE Multiple Contexts have a path of "/jspCh08".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.766
+!MESSAGE Multiple Contexts have a path of "/dwTest".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.766
+!MESSAGE Multiple Contexts have a path of "/jspProjectCh01".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.766
+!MESSAGE Multiple Contexts have a path of "/dwHtml03".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.766
+!MESSAGE Multiple Contexts have a path of "/dwCss05".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.766
+!MESSAGE Multiple Contexts have a path of "/dwJs06".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:00.766
+!MESSAGE Multiple Contexts have a path of "/dwJs08".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.681
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.681
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.681
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.681
+!MESSAGE Multiple Contexts have a path of "/dwBsProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.681
+!MESSAGE Multiple Contexts have a path of "/ch03jsp".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.681
+!MESSAGE Multiple Contexts have a path of "/jspCh05".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.681
+!MESSAGE Multiple Contexts have a path of "/jspCh07".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.681
+!MESSAGE Multiple Contexts have a path of "/jspCh09".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.681
+!MESSAGE Multiple Contexts have a path of "/dwHtml02".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.681
+!MESSAGE Multiple Contexts have a path of "/dwJquery".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.681
+!MESSAGE Multiple Contexts have a path of "/dwCss04".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.681
+!MESSAGE Multiple Contexts have a path of "/dwJs07".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.681
+!MESSAGE Multiple Contexts have a path of "/dwJs09".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.681
+!MESSAGE Multiple Contexts have a path of "/dwJs10".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.682
+!MESSAGE Multiple Contexts have a path of "/jspCh02".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.682
+!MESSAGE Multiple Contexts have a path of "/jspCh04".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.682
+!MESSAGE Multiple Contexts have a path of "/jspCh06".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.682
+!MESSAGE Multiple Contexts have a path of "/jspCh08".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.682
+!MESSAGE Multiple Contexts have a path of "/dwTest".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.682
+!MESSAGE Multiple Contexts have a path of "/jspProjectCh01".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.682
+!MESSAGE Multiple Contexts have a path of "/dwHtml03".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.682
+!MESSAGE Multiple Contexts have a path of "/dwCss05".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.682
+!MESSAGE Multiple Contexts have a path of "/dwJs06".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:27.682
+!MESSAGE Multiple Contexts have a path of "/dwJs08".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/dwBsProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/ch03jsp".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/jspCh05".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/jspCh07".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/jspCh09".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/dwHtml02".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/dwJquery".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/dwCss04".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/dwJs07".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/dwJs09".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/dwJs10".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/jspCh02".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/jspCh04".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/jspCh06".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/jspCh08".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/dwTest".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/jspProjectCh01".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/dwHtml03".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/dwCss05".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/dwJs06".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:48.620
+!MESSAGE Multiple Contexts have a path of "/dwJs08".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/dwBsProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/ch03jsp".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/jspCh05".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/jspCh07".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/jspCh09".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/dwHtml02".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/dwJquery".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/dwCss04".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/dwJs07".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/dwJs09".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/dwJs10".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/jspCh02".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/jspCh04".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/jspCh06".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/jspCh08".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/dwTest".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/jspProjectCh01".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/dwHtml03".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/dwCss05".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/dwJs06".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:19:56.757
+!MESSAGE Multiple Contexts have a path of "/dwJs08".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.796
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.796
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.796
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.796
+!MESSAGE Multiple Contexts have a path of "/dwBsProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.796
+!MESSAGE Multiple Contexts have a path of "/ch03jsp".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.796
+!MESSAGE Multiple Contexts have a path of "/jspCh05".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.796
+!MESSAGE Multiple Contexts have a path of "/jspCh07".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.797
+!MESSAGE Multiple Contexts have a path of "/jspCh09".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.797
+!MESSAGE Multiple Contexts have a path of "/dwHtml02".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.797
+!MESSAGE Multiple Contexts have a path of "/dwJquery".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.797
+!MESSAGE Multiple Contexts have a path of "/dwCss04".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.797
+!MESSAGE Multiple Contexts have a path of "/dwJs07".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.797
+!MESSAGE Multiple Contexts have a path of "/dwJs09".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.797
+!MESSAGE Multiple Contexts have a path of "/dwJs10".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.797
+!MESSAGE Multiple Contexts have a path of "/jspCh02".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.797
+!MESSAGE Multiple Contexts have a path of "/jspCh04".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.797
+!MESSAGE Multiple Contexts have a path of "/jspCh06".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.797
+!MESSAGE Multiple Contexts have a path of "/jspCh08".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.797
+!MESSAGE Multiple Contexts have a path of "/dwTest".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.797
+!MESSAGE Multiple Contexts have a path of "/jspProjectCh01".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.797
+!MESSAGE Multiple Contexts have a path of "/dwHtml03".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.797
+!MESSAGE Multiple Contexts have a path of "/dwCss05".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.797
+!MESSAGE Multiple Contexts have a path of "/dwJs06".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:15.797
+!MESSAGE Multiple Contexts have a path of "/dwJs08".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/dwBsProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/ch03jsp".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/jspCh05".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/jspCh07".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/jspCh09".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/dwHtml02".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/dwJquery".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/dwCss04".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/dwJs07".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/dwJs09".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/dwJs10".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/jspCh02".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/jspCh04".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/jspCh06".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/jspCh08".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/dwTest".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/jspProjectCh01".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/dwHtml03".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.707
+!MESSAGE Multiple Contexts have a path of "/dwCss05".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.708
+!MESSAGE Multiple Contexts have a path of "/dwJs06".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:35.708
+!MESSAGE Multiple Contexts have a path of "/dwJs08".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/dwBsProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/ch03jsp".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/jspCh05".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/jspCh07".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/jspCh09".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/dwHtml02".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/dwJquery".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/dwCss04".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/dwJs07".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/dwJs09".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/dwJs10".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/jspCh02".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/jspCh04".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/jspCh06".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/jspCh08".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/dwTest".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.494
+!MESSAGE Multiple Contexts have a path of "/jspProjectCh01".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.495
+!MESSAGE Multiple Contexts have a path of "/dwHtml03".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.495
+!MESSAGE Multiple Contexts have a path of "/dwCss05".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.495
+!MESSAGE Multiple Contexts have a path of "/dwJs06".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:20:47.495
+!MESSAGE Multiple Contexts have a path of "/dwJs08".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:39:33.743
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:39:33.743
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:39:33.870
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:39:33.871
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:39:34.929
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:39:34.929
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:40:09.326
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:40:09.326
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:40:27.643
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:40:27.643
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:40:37.787
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:40:37.787
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:40:50.905
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:40:50.905
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:40:50.905
+!MESSAGE Multiple Contexts have a path of "/dwBsProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:41:13.259
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:41:13.259
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:41:13.259
+!MESSAGE Multiple Contexts have a path of "/dwBsProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:42:03.745
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:42:03.745
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:42:04.036
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:42:04.036
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:42:04.813
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:42:04.813
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:42:23.689
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:42:23.689
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:42:36.276
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:42:36.276
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:42:58.271
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:42:58.271
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:43:58.981
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:43:58.981
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:44:39.568
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:44:39.568
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:44:43.369
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:44:43.369
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:46:23.101
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:46:23.101
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:46:29.756
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:46:29.756
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:46:40.569
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:46:40.569
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:46:43.364
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2023-04-13 11:46:43.364
+!MESSAGE Multiple Contexts have a path of "/boardProject".
+
+!ENTRY org.eclipse.ui.workbench 4 0 2023-04-13 11:47:03.793
+!MESSAGE IWorkbenchSite.getShell() was called after part disposal: PartSite(id=org.eclipse.wst.server.ui.editor,pluginId=org.eclipse.wst.server.ui,registeredName=Server Editor,hashCode=1573490418)
+!STACK 0
+java.lang.IllegalStateException: IWorkbenchSite.getShell() was called after part disposal: PartSite(id=org.eclipse.wst.server.ui.editor,pluginId=org.eclipse.wst.server.ui,registeredName=Server Editor,hashCode=1573490418)
+	at org.eclipse.ui.internal.PartSite.getShell(PartSite.java:452)
+	at org.eclipse.wst.server.ui.internal.editor.ServerEditor.doSave(ServerEditor.java:409)
+	at org.eclipse.wst.server.ui.internal.editor.ServerEditor.checkAndCloseEditorOnDeletedServer(ServerEditor.java:954)
+	at org.eclipse.wst.server.ui.internal.editor.ServerEditor.checkResourceState(ServerEditor.java:973)
+	at org.eclipse.wst.server.ui.internal.editor.ServerEditor$ActivationListener.handleActivation(ServerEditor.java:84)
+	at org.eclipse.wst.server.ui.internal.editor.ServerEditor$ActivationListener.shellActivated(ServerEditor.java:74)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:92)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1087)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1072)
+	at org.eclipse.swt.widgets.Decorations.WM_ACTIVATE(Decorations.java:1521)
+	at org.eclipse.swt.widgets.Shell.WM_ACTIVATE(Shell.java:2314)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4743)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2286)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5015)
+	at org.eclipse.swt.internal.win32.OS.DestroyWindow(Native Method)
+	at org.eclipse.swt.widgets.Control.destroyWidget(Control.java:782)
+	at org.eclipse.swt.widgets.Shell.destroyWidget(Shell.java:732)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:828)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:425)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:392)
+	at org.eclipse.jface.window.Window.close(Window.java:335)
+	at org.eclipse.jface.dialogs.Dialog.close(Dialog.java:988)
+	at org.eclipse.jface.dialogs.MessageDialog.buttonPressed(MessageDialog.java:264)
+	at org.eclipse.wst.server.ui.internal.DeleteServerDialog.buttonPressed(DeleteServerDialog.java:232)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4060)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3632)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.wst.server.ui.internal.view.servers.GlobalDeleteAction.deleteServer(GlobalDeleteAction.java:207)
+	at org.eclipse.wst.server.ui.internal.view.servers.GlobalDeleteAction.run(GlobalDeleteAction.java:133)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4060)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3632)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.ui 4 0 2023-04-13 11:47:04.975
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.wst.server.ui.internal.editor.GlobalCommandManager.isDirty(String)" because "this.commandManager" is null
+	at org.eclipse.wst.server.ui.internal.editor.ServerEditor.checkResourceState(ServerEditor.java:977)
+	at org.eclipse.wst.server.ui.internal.editor.ServerEditor$ActivationListener.handleActivation(ServerEditor.java:84)
+	at org.eclipse.wst.server.ui.internal.editor.ServerEditor$ActivationListener.shellActivated(ServerEditor.java:74)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:92)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1087)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1072)
+	at org.eclipse.swt.widgets.Decorations.WM_ACTIVATE(Decorations.java:1521)
+	at org.eclipse.swt.widgets.Shell.WM_ACTIVATE(Shell.java:2314)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4743)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2286)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5015)
+	at org.eclipse.swt.internal.win32.OS.DestroyWindow(Native Method)
+	at org.eclipse.swt.widgets.Control.destroyWidget(Control.java:782)
+	at org.eclipse.swt.widgets.Shell.destroyWidget(Shell.java:732)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:828)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:425)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:392)
+	at org.eclipse.jface.window.Window.close(Window.java:335)
+	at org.eclipse.jface.dialogs.Dialog.close(Dialog.java:988)
+	at org.eclipse.jface.dialogs.MessageDialog.buttonPressed(MessageDialog.java:264)
+	at org.eclipse.wst.server.ui.internal.DeleteServerDialog.buttonPressed(DeleteServerDialog.java:232)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4060)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3632)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.wst.server.ui.internal.view.servers.GlobalDeleteAction.deleteServer(GlobalDeleteAction.java:207)
+	at org.eclipse.wst.server.ui.internal.view.servers.GlobalDeleteAction.run(GlobalDeleteAction.java:133)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4060)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3632)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)

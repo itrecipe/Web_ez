@@ -14,8 +14,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
---><!-- The contents of this file will be loaded for each web application -->
-<Context>
+--><!-- The contents of this file will be loaded for each web application --><Context>
     <!-- Default set of monitored resources. If one of these changes, the    -->
     <!-- web application will be reloaded.                                   -->
     <WatchedResource>WEB-INF/web.xml</WatchedResource>
@@ -27,15 +26,5 @@
     <Manager pathname="" />
     -->
     <!--DBCP 설정-->
-	<Resource 
-		name="jdbc/Oracle11g" auth="Container"
-		type="javax.sql.DataSource" 
-		driverClassName="oracle.jdbc.OracleDriver"
-		url="jdbc:oracle:thin:@127.0.0.1:1521:xe"
-		username="scott" 
-		password="tiger" 
-		maxTotal="20" 
-		maxIdle="10"
-		maxWaitMillis="-1"
-	/>
+	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/Oracle11g" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott"/>
 </Context>

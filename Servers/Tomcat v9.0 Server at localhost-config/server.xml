@@ -140,27 +140,27 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="dwBsProject" path="/dwBsProject" reloadable="true" source="org.eclipse.jst.jee.server:dwBsProject"/>
-	<Context docBase="dwHtml02" path="/dwHtml02" reloadable="true" source="org.eclipse.jst.jee.server:dwHtml02"/>
-	<Context docBase="dwJquery" path="/dwJquery" reloadable="true" source="org.eclipse.jst.jee.server:dwJquery"/>
-	<Context docBase="dwCss04" path="/dwCss04" reloadable="true" source="org.eclipse.jst.jee.server:dwCss04"/>
-	<Context docBase="dwJs07" path="/dwJs07" reloadable="true" source="org.eclipse.jst.jee.server:dwJs07"/>
-	<Context docBase="dwJs09" path="/dwJs09" reloadable="true" source="org.eclipse.jst.jee.server:dwJs09"/>
-	<Context docBase="dwJs10" path="/dwJs10" reloadable="true" source="org.eclipse.jst.jee.server:dwJs10"/>
-	<Context docBase="jspCh02" path="/jspCh02" reloadable="true" source="org.eclipse.jst.jee.server:jspCh02"/>
-	<Context docBase="dwTest" path="/dwTest" reloadable="true" source="org.eclipse.jst.jee.server:dwTest"/>
-	<Context docBase="jspProjectCh01" path="/jspProjectCh01" reloadable="true" source="org.eclipse.jst.jee.server:jspProjectCh01"/>
-	<Context docBase="dwHtml03" path="/dwHtml03" reloadable="true" source="org.eclipse.jst.jee.server:dwHtml03"/>
-	<Context docBase="dwCss05" path="/dwCss05" reloadable="true" source="org.eclipse.jst.jee.server:dwCss05"/>
-	<Context docBase="dwJs06" path="/dwJs06" reloadable="true" source="org.eclipse.jst.jee.server:dwJs06"/>
-	<Context docBase="dwJs08" path="/dwJs08" reloadable="true" source="org.eclipse.jst.jee.server:dwJs08"/>
-	<Context docBase="jspCh03" path="/ch03jsp" reloadable="true" source="org.eclipse.jst.jee.server:jspCh03"/>
+      
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<!-- docBase는 프로젝트명 path는 컨텍스트 패스명 -->
-	<Context docBase="jspCh04" path="/jspCh04" reloadable="true" source="org.eclipse.jst.jee.server:jspCh04"/>
-	<Context docBase="jspCh05" path="/jspCh05" reloadable="true" source="org.eclipse.jst.jee.server:jspCh05"/>
-	<Context docBase="jspCh06" path="/jspCh06" reloadable="true" source="org.eclipse.jst.jee.server:jspCh06"/>
-	<Context docBase="jspCh07" path="/jspCh07" reloadable="true" source="org.eclipse.jst.jee.server:jspCh07"/>
-	<Context docBase="jspCh08" path="/jspCh08" reloadable="true" source="org.eclipse.jst.jee.server:jspCh08"/><Context docBase="jspCh09" path="/jspCh09" reloadable="true" source="org.eclipse.jst.jee.server:jspCh09"/><Context docBase="boardProject" path="/boardProject" reloadable="true" source="org.eclipse.jst.jee.server:boardProject"/><Context docBase="boardProject" path="/boardProject" reloadable="true" source="org.eclipse.jst.jee.server:boardProject"/><Context docBase="boardProject" path="/boardProject" reloadable="true" source="org.eclipse.jst.jee.server:boardProject"/><Context docBase="dwBsProject" path="/dwBsProject" reloadable="true" source="org.eclipse.jst.jee.server:dwBsProject"/><Context docBase="jspCh03" path="/ch03jsp" reloadable="true" source="org.eclipse.jst.jee.server:jspCh03"/><Context docBase="jspCh05" path="/jspCh05" reloadable="true" source="org.eclipse.jst.jee.server:jspCh05"/><Context docBase="jspCh07" path="/jspCh07" reloadable="true" source="org.eclipse.jst.jee.server:jspCh07"/><Context docBase="jspCh09" path="/jspCh09" reloadable="true" source="org.eclipse.jst.jee.server:jspCh09"/><Context docBase="dwHtml02" path="/dwHtml02" reloadable="true" source="org.eclipse.jst.jee.server:dwHtml02"/><Context docBase="dwJquery" path="/dwJquery" reloadable="true" source="org.eclipse.jst.jee.server:dwJquery"/><Context docBase="dwCss04" path="/dwCss04" reloadable="true" source="org.eclipse.jst.jee.server:dwCss04"/><Context docBase="dwJs07" path="/dwJs07" reloadable="true" source="org.eclipse.jst.jee.server:dwJs07"/><Context docBase="dwJs09" path="/dwJs09" reloadable="true" source="org.eclipse.jst.jee.server:dwJs09"/><Context docBase="dwJs10" path="/dwJs10" reloadable="true" source="org.eclipse.jst.jee.server:dwJs10"/><Context docBase="jspCh02" path="/jspCh02" reloadable="true" source="org.eclipse.jst.jee.server:jspCh02"/><Context docBase="jspCh04" path="/jspCh04" reloadable="true" source="org.eclipse.jst.jee.server:jspCh04"/><Context docBase="jspCh06" path="/jspCh06" reloadable="true" source="org.eclipse.jst.jee.server:jspCh06"/><Context docBase="jspCh08" path="/jspCh08" reloadable="true" source="org.eclipse.jst.jee.server:jspCh08"/><Context docBase="dwTest" path="/dwTest" reloadable="true" source="org.eclipse.jst.jee.server:dwTest"/><Context docBase="jspProjectCh01" path="/jspProjectCh01" reloadable="true" source="org.eclipse.jst.jee.server:jspProjectCh01"/><Context docBase="dwHtml03" path="/dwHtml03" reloadable="true" source="org.eclipse.jst.jee.server:dwHtml03"/><Context docBase="dwCss05" path="/dwCss05" reloadable="true" source="org.eclipse.jst.jee.server:dwCss05"/><Context docBase="dwJs06" path="/dwJs06" reloadable="true" source="org.eclipse.jst.jee.server:dwJs06"/><Context docBase="dwJs08" path="/dwJs08" reloadable="true" source="org.eclipse.jst.jee.server:dwJs08"/></Host>
+	
+	
+	
+	
+	<Context docBase="boardProject" path="/boardProject" reloadable="true" source="org.eclipse.jst.jee.server:boardProject"/><Context docBase="dwBsProject" path="/dwBsProject" reloadable="true" source="org.eclipse.jst.jee.server:dwBsProject"/></Host>
     </Engine>
   </Service>
 </Server>
