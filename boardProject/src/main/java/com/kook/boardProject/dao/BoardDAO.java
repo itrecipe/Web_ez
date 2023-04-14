@@ -27,6 +27,7 @@ public class BoardDAO {
 		return instance;
 	}
 	
+	//게시글 전체 조회 (select)
 	public List<BoardVO> selectAllBoards(){
 		String sql = "select * from board order by num desc";
 		//나중에 작성한 게시글이 먼저 나오도록 정렬한다.
@@ -81,5 +82,56 @@ public class BoardDAO {
 		} finally {
 			DBManager.close(conn, pstmt);
 		}
+	}
+	
+	//조회횟수 업데이트 (update)
+	public void updateReadCount(String num) {
+		String sql = "update board set readcount=readcount+1 where num=?";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		try {
+			conn = DBManager.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, num);
+			//원래는 pstmt.setInt(1, Integer.parsInt(num));
+			pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager.close(conn, pstmt);
+		}
+	}
+	
+	//조회 대상 ResultSet를 처리한다.
+	//ResultSet를 매핑되는 BoardVO객체로 변환하여 리턴
+	public BoardVO selectOneBoardByNum(String num) {
+		String sql = "select * from board where num = ?";
+		BoardVO bVo = null;
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			conn = DBManager.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, num);
+			rs = pstmt.executeQuery();
+			if(rs.next()) {
+				bVo = new BoardVO();
+				bVo.setNum(rs.getInt("num"));
+				bVo.setName(rs.getString("name"));
+				bVo.setPass(rs.getString("pass"));
+				bVo.setEmail(rs.getString("email"));
+				bVo.setTitle(rs.getString("title"));
+				bVo.setContent(rs.getString("content"));
+				bVo.setWritedate(rs.getTimestamp("writedate"));
+				bVo.setReadcount(rs.getInt("readcount"));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager.close(conn, pstmt, rs);
+		}
+		return bVo;
+		
 	}
 }
