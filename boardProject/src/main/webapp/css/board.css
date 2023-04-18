@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+#wrap {
+	width: 971px; /*1024 * 768로 해상도롤 맞춰서 설계했다.*/
+	/*가운데 정렬을 위해 바깥쪽 여백을 설정한다.*/
+	margin: 0; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	color: green; /*글 색상*/
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse; /*테두리선을 하나로 통합한다.*/
+	font-size: 12px; /*글꼴의 크기*/
+	line-height: 24px; /*줄 간격*/
+}
+
+table, td, th {
+	border: solid 1px #d3d3d3; /*경계선 색상 스타일 굵기(원칙적으로 작성할것)*/
+	padding: 5px; /*안쪽 여백*/	
+}
+
+th {
+	background: yellowgreen; /*배경색*/
+}
+
+img {
+	width: 220px; /*이미지 너비(가로)*/
+	height: 300px; /*이미지 높이(세로)*/
+}
+
+a {
+	text-decoration: none; /*링크 밑줄 이미지*/
+	color: black; /*글 색상*/
+}
+
+a:horver {
+	text-decoration: underline; /*밑줄*/
+	color: green; /*글 색상*/
+}
