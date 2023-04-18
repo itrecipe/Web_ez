@@ -17,3 +17,10 @@ function boardCheck(){
 	}
 	return true;
 }
+
+function open_win(url, name){
+	window.open(url, name, "width=500, height=230");
+	//url은 요청 페이지 경로, name은 이창의 이름, 크기
+}
+
+function

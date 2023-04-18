@@ -26,16 +26,20 @@
 			</tr>
 		<tr>
 			<th>작성일</th>
-			<td><fmt:formatDate value="${requestScope.board.writedate}" /></td>
+			<td><fmt:formatDate value="${board.writedate}" /></td>
 			<th>조회수</th>
 			<td>${board.readcount}</td>
 		</tr>
 		<tr>
-			<th>작성일</th>
+			<th>제목</th>
+			<td colspan="3">${board.title}</td>
+		</tr>
+		<tr>
+			<th>내용</th>
 			<td colspan="3"><pre>${board.content}</pre></td>
 		</tr>
 	</table>
-	<br /><br />
+	<br/><br/>
 	<input type="button" value="게시글 수정"
 			onclick="open_win('BoardServlet?command=board_check_pass_form&num=${board.num}', 'update')">
 
