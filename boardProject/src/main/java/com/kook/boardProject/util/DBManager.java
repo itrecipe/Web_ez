@@ -37,7 +37,7 @@ public class DBManager {
 		}
 	}
 
-	// DML(insert, update, delete)을 수행한 후 리소스 해제를 위한 메소드(finally부)                                   
+	// DML(insert, update, delete)을 수행한 후 리소스 해제를 위한 메소드(finally부)
 	public static void close(Connection conn, Statement stmt) {
 		try {
 			stmt.close();
