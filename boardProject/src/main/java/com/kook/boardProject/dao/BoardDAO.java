@@ -128,5 +128,26 @@ public class BoardDAO {
 		}
 		return bVo;
 	}
+	
+	public void updateBoard(BoardVO bVo) {
+		String sql = "update board set name=?, email=?, pass=?, title=?, content=? where num=?";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		try {
+			conn = DBManager.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, bVo.getName()); //db테이블에서는 varchar2
+			pstmt.setString(2, bVo.getEmail());
+			pstmt.setString(3, bVo.getPass());
+			pstmt.setString(4, bVo.getTitle());
+			pstmt.setString(5, bVo.getContent());
+			pstmt.setInt(6, bVo.getNum()); //db테이블에서는number
+			pstmt.executeUpdate(); //리턴값은 update성공한 레코드 수
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager.close(conn, pstmt);
+		}
+	}
 
 }
