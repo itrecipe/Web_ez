@@ -160,7 +160,7 @@
 	
 	
 	
-	<Context docBase="dwBsProject" path="/dwBsProject" reloadable="true" source="org.eclipse.jst.jee.server:dwBsProject"/><Context docBase="boardProject" path="/boardProject" reloadable="true" source="org.eclipse.jst.jee.server:boardProject"/></Host>
+	<Context docBase="boardProject" path="/boardProject" reloadable="true" source="org.eclipse.jst.jee.server:boardProject"/></Host>
     </Engine>
   </Service>
 </Server>
