@@ -8,12 +8,12 @@
 <head>
 <meta charset="UTF-8">
 <title>boardUpdate</title>
-<link rel="stylesheet" tyep="text/css" href="css/board.css">
+<link rel="stylesheet" type="text/css" href="css/board.css">
 <script type="text/javascript" src="script/board.js"></script>
 </head>
 <body>
 
-<div id="wrap" style=""></div>
+<div id="wrap" style="width:60%; margin:auto;"></div>
 	<h1>게시글 수정</h1>
 	<form name="frm" method="post" action="BoardServlet">
 		<input type="hidden" name="command" value="board_update">

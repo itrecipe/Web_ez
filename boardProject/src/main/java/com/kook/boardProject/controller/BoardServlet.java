@@ -31,7 +31,7 @@ public class BoardServlet extends HttpServlet {
 		//파라메터변수 값으로 업무처리를 구분
 		System.out.println("BoardServlet에서 요청을 받음을 확인 : " + command);
 		//command값을 참조하여 명령처리 객체를 반환하는 클래스 ActionFactory
-		ActionFactory af=ActionFactory.getInstance();
+		ActionFactory af = ActionFactory.getInstance();
 		Action action = af.getAction(command); //command처리용 객체를 반환
 		if(action != null) {
 			action.execute(request, response);

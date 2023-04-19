@@ -27,7 +27,7 @@ public class ActionFactory {
 	//Action은 command의 인터페이스이고 모든 command처리 클래스는 Action을 구현 처리
 	public Action getAction(String command) {
 		Action action = null;
-		System.out.println("ActionFactory :" + command);
+		System.out.println("ActionFactory : " + command);
 		/* 추가된 부분 */
 		if (command.equals("board_list")) {
 			action = new BoardListAction();

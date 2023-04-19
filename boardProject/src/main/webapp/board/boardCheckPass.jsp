@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<div style="width:60%;margin : auto;">
+<div style="width:60%; margin:auto;">
 	<h1>비밀번호 확인</h1>
 	<form action="BoardServlet" name="frm" method="get">
 		<input type="hidden" name="command" value="board_check_pass">
