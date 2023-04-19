@@ -4179,3 +4179,12 @@ java.util.concurrent.TimeoutException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.lsp4e 1 0 2023-04-19 12:05:04.150
+!MESSAGE [Info]	[lspserver] No content was available for completion request
+
+!ENTRY org.eclipse.lsp4e 1 0 2023-04-19 12:05:04.238
+!MESSAGE [Info]	[lspserver] No content was available for completion request
+
+!ENTRY org.eclipse.lsp4e 1 0 2023-04-19 12:05:10.925
+!MESSAGE [Info]	[lspserver] No content was available for completion request

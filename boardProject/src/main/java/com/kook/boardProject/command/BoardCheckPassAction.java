@@ -22,7 +22,7 @@ public class BoardCheckPassAction implements Action {
 		BoardVO bVo = bDao.selectOneBoardByNum(num); 
 		//게시글 상세보기시 만든 메서드로 num을 
 		if (bVo.getPass().equals(pass)) { // 성공
-			url = "board/checkSuccess.jsp";
+			url = "board/checkSuccess.jsp"; //상세내용인데 수정 가능하게 하려면 form형식 jsp
 		} else {// 실패
 			url = "board/boardCheckPass.jsp";
 			request.setAttribute("message", "비밀번호가 틀렸습니다.");

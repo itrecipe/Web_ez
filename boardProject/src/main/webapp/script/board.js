@@ -16,6 +16,7 @@ function boardCheck() {
 
 function open_win(url, name) {
 	window.open(url, name, "width=500, height=230");
+	//팝업창을 띄운다.
 }
 
 function passCheck() {
