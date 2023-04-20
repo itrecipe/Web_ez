@@ -23,10 +23,10 @@
     <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
-    <fullyQualifiedTypeName name="com.kook.boardProject.command.BoardListAction"/>
     <fullyQualifiedTypeName name="com.kook.boardProject.dto.BoardVO"/>
+    <fullyQualifiedTypeName name="com.kook.boardProject.dao.BoardDAO"/>
+    <fullyQualifiedTypeName name="com.kook.boardProject.command.BoardListAction"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="com.kook.boardProject.dao.BoardDAO"/>
     <fullyQualifiedTypeName name="com.kook.boardProject.util.DBManager"/>
 </qualifiedTypeNameHistroy>
