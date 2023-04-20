@@ -23,6 +23,6 @@ public class BoardUpdateAction implements Action {
 		bVo.setContent(request.getParameter("content"));
 		BoardDAO bDao = BoardDAO.getInstance();
 		bDao.updateBoard(bVo);
-		new BoardListAction().execute(request, response); //리스트 창 보여주기
+		new BoardListAction().execute(request, response); //list 창 보여주기
 	}
 }

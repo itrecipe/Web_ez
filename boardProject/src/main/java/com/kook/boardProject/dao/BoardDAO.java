@@ -24,7 +24,8 @@ public class BoardDAO {
 	public static BoardDAO getInstance() {
 		return instance;
 	}
-
+	
+	//게시글 리스트 조회
 	public List<BoardVO> selectAllBoards() {
 		String sql = "select * from board order by num desc";
 		// 나중에 작성한 게시글이 먼저 나오도록 정렬
@@ -56,7 +57,7 @@ public class BoardDAO {
 		}
 		return list;
 	}
-
+	
 	// 게시글 등록 처리
 	public void insertBoard(BoardVO bVo) {
 		String sql = "insert into board(num, name, email, pass, title, content) "
@@ -78,7 +79,7 @@ public class BoardDAO {
 			DBManager.close(conn, pstmt);
 		}
 	}
-
+	
 	// 조회횟수 업데이트
 	public void updateReadCount(String num) {
 		String sql = "update board set readcount=readcount+1 where num=?";
@@ -129,6 +130,7 @@ public class BoardDAO {
 		return bVo;
 	}
 	
+	//게시글 수정
 	public void updateBoard(BoardVO bVo) {
 		String sql = "update board set name=?, email=?, pass=?, title=?, content=? where num=?";
 		Connection conn = null;
@@ -150,4 +152,21 @@ public class BoardDAO {
 		}
 	}
 
+	//게시글 삭제
+	public void deleteBoard(String num) {
+		String sql = "delete board where num=?";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		try {
+			conn = DBManager.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, num);
+			pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			DBManager.close(conn, pstmt);
+		}
+	}
 }

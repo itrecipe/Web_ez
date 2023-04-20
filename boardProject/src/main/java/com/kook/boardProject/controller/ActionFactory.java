@@ -3,6 +3,7 @@ package com.kook.boardProject.controller;
 import com.kook.boardProject.command.Action;
 import com.kook.boardProject.command.BoardCheckPassAction;
 import com.kook.boardProject.command.BoardCheckPassFormAction;
+import com.kook.boardProject.command.BoardDeleteAction;
 import com.kook.boardProject.command.BoardListAction;
 import com.kook.boardProject.command.BoardUpdateAction;
 import com.kook.boardProject.command.BoardUpdateFormAction;
@@ -27,7 +28,7 @@ public class ActionFactory {
 	//Action은 command의 인터페이스이고 모든 command처리 클래스는 Action을 구현 처리
 	public Action getAction(String command) {
 		Action action = null;
-		System.out.println("ActionFactory : " + command);
+		System.out.println("ActionFactory에서 받은 요청 내역 확인 : " + command);
 		/* 추가된 부분 */
 		if (command.equals("board_list")) {
 			action = new BoardListAction();
@@ -56,12 +57,10 @@ public class ActionFactory {
 		} 
 		else if (command.equals("board_update")) {
 			action = new BoardUpdateAction();
-		} 
-		/*
+		}
 		else if (command.equals("board_delete")) {
 			action = new BoardDeleteAction();
 		}
-		*/
 		return action;
 	}
 }

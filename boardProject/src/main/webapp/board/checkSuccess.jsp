@@ -11,6 +11,7 @@
 <body>
 
 <script>
+//name은 팝업창의 이름(window의 속해있는 객체명)
 if (window.name == "update") {
 window.opener.parent.location.href = "BoardServlet?command=board_update_form&num=${param.num}";
 }
