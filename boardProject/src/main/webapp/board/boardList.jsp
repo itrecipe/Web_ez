@@ -26,7 +26,7 @@
 			<th>작성일</th>
 			<th>조회</th>
 		</tr>
-		<%--jsp의 jstl을 이용하여 실제 값을 대입 --%>
+		<%-- jsp의 jstl을 이용하여 실제 값을 대입 --%>
 		<c:forEach var="board" items="${boardList}">
 			<tr class="record">
 				<td>${board.num }</td>
