@@ -160,7 +160,7 @@
 	
 	
 	
-	<Context docBase="boardProject" path="/boardProject" reloadable="true" source="org.eclipse.jst.jee.server:boardProject"/><Context docBase="jspCh09" path="/jspCh09" reloadable="true" source="org.eclipse.jst.jee.server:jspCh09"/></Host>
+	<Context docBase="boardProject" path="/boardProject" reloadable="true" source="org.eclipse.jst.jee.server:boardProject"/></Host>
     </Engine>
   </Service>
 </Server>
